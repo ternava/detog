@@ -4,11 +4,7 @@ description: A collection of papers and resources on Feature Toggles.
 author: Xhevahire Tërnava
 url: https://ternava.github.io
 
-# Optional: If you want to add categories, you can define them here
 categories:
   - Research
   - Talks
   - Blog Post
-
-# Enable Disqus comments if needed
-comments: true
