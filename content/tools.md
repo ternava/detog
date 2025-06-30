@@ -1,41 +1,18 @@
 +++
-title = "Tools"
+title = "Tools & Utilities"
 +++
 
-# Tools & Libraries
+# Tools for Feature Toggle Removal
 
-## Open Source Libraries
-- **LaunchDarkly** - Feature flag management platform  
-  [GitHub](https://github.com/launchdarkly) | License: MIT | Language: Multi
+Tools and utilities specifically designed for detecting and removing feature toggles.
 
-- **Unleash** - Open source feature toggle service  
-  [GitHub](https://github.com/unleash/unleash) | License: Apache 2.0 | Language: JavaScript
+## Removal & Cleanup Tools
+- **Piranha** - Automated code refactoring tool for deleting stale feature flags  
+  [GitHub](https://github.com/uber/piranha) | License: Apache 2.0 | Language: Multi (Java, Swift, Objective-C)
+  *Industry-proven tool from Uber*
 
-- **Flipper** - Feature flipping for Ruby  
-  [GitHub](https://github.com/jnunemaker/flipper) | License: MIT | Language: Ruby
+## Static Analysis & Detection Tools
 
-- **FF4J** - Feature Flipping for Java  
-  [GitHub](https://github.com/ff4j/ff4j) | License: Apache 2.0 | Language: Java
+## Toggle Management Libraries (with removal focus)
 
-- **Togglz** - Implementation of Feature Toggles pattern for Java  
-  [GitHub](https://github.com/togglz/togglz) | License: Apache 2.0 | Language: Java
-
-## Commercial Platforms
-- **Split.io** - Feature flag and experimentation platform  
-  [Website](https://split.io) | Pricing: Freemium
-
-- **Optimizely** - Experimentation and feature management  
-  [Website](https://optimizely.com) | Pricing: Enterprise
-
-- **ConfigCat** - Feature flag service  
-  [Website](https://configcat.com) | Pricing: Freemium
-
-- **LaunchDarkly** - Enterprise feature management  
-  [Website](https://launchdarkly.com) | Pricing: Paid
-
-## CLI Tools
-- **feature-toggle-cli** - Command line interface for managing flags  
-  [GitHub](https://github.com/example/feature-toggle-cli) | License: MIT
-
-- **ff-admin** - Administrative tool for feature flags  
-  [GitHub](https://github.com/example/ff-admin) | License: Apache 2.0
+## Enterprise Platforms (with debt management)

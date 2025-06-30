@@ -1,15 +1,17 @@
 +++
-title = "Feature Toggles Research"
+title = "deTOG - Feature Toggle Removal Hub"
 +++
 
-A curated collection of research materials about Feature Toggles (Feature Flags).
+A comprehensive collection of resources focused on **removing feature toggles**
 
-## Recent Additions
+Feature toggles are powerful for deployment and experimentation, but they can accumulate over time. This site focuses specifically on state-of-the-art strategies, tools, and research for safely removing unused toggles and preventing toggle-related complexity.
 
-- New paper: "Feature Toggle Patterns in Large-Scale Software Systems" (2023)
-- Added: FF4J and Togglz Java libraries
-- Updated: Martin Fowler's feature toggle guide
+## Recent additions
+
+- New paper: "[Exploring Influence of Feature Toggles on Code Complexity](https://dl.acm.org/doi/abs/10.1145/3661167.3661190)" (2024)
+- Added: ...
+- Updated: ...
 
 ## Contributing
 
-This is an open research collection. To suggest additions or corrections, please [open an issue](https://github.com/ternava/detog/issues) or submit a pull request.
+This is an open research collection focused on feature toggle removal. To suggest additions or corrections, please [open an issue](https://github.com/ternava/detog/issues) or submit a pull request.
