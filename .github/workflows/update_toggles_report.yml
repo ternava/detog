@@ -28,11 +28,11 @@ jobs:
         run: mkdir -p static/data
       - name: Extract Kubernetes feature gates
         run: |
-          python ../tools/extract-toggles.py kubernetes code/kubernetes \
+          python tools/extract-toggles.py kubernetes code/kubernetes \
             > static/data/k8s_feature_toggles.tsv
       - name: Extract GitLab feature flags
         run: |
-          python ../tools/extract-toggles.py gitlab code/gitlab \
+          python tools/extract-toggles.py gitlab code/gitlab \
             > static/data/gitlab_feature_flags.tsv
       - name: Commit and push data
         run: |
