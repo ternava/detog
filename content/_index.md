@@ -12,6 +12,10 @@ Feature toggles are powerful for deployment and experimentation, but they can ac
 - Added: ...
 - Updated: ...
 
+## Visualizations
+
+- [Feature Toggle Trends](/toggles-chart/)
+
 ## Contributing
 
 This is an open research collection focused on feature toggle removal. To suggest additions or corrections, please [open an issue](https://github.com/ternava/detog/issues) or submit a pull request.
