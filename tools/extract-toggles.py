@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import re, os, sys, click
+import re, os, sys, click, subprocess
 
 FEATURE_PATTERNS = {
   "kubernetes": re.compile(r'featuregate.Feature = "([^"]+)"'),
@@ -23,5 +23,11 @@ def main(project, root):
                 print(f"{project}\t{flag_name}\t{dirpath}/{fname}")
             else:
                 continue
+            # get date for this version/tag
+            date = subprocess.check_output([
+                "git", "-C", repo_path, "log", "-1", "--format=%ci", version
+            ]).decode('utf-8').strip()
+            # print name, version, and date
+            print(f"{toggle}\t{version}\t{date}")
 if __name__=="__main__":
     main()
