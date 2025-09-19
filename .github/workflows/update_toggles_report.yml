@@ -24,6 +24,8 @@ jobs:
       - name: Install dependencies
         run: |
           pip install click
+      - name: Ensure data directory exists
+        run: mkdir -p static/data
       - name: Extract Kubernetes feature gates
         run: |
           python ../tools/extract-toggles.py kubernetes code/kubernetes \
