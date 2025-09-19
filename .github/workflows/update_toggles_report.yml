@@ -1,0 +1,41 @@
+name: Update Feature Toggles Data
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout detog
+        uses: actions/checkout@v3
+      - name: Clone Kubernetes repository
+        run: |
+          git clone --depth 1 https://github.com/kubernetes/kubernetes.git code/kubernetes
+      - name: Clone GitLab repository
+        run: |
+          git clone --depth 1 https://gitlab.com/gitlab-org/gitlab.git code/gitlab
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          pip install click
+      - name: Extract Kubernetes feature gates
+        run: |
+          python ../tools/extract-toogles.py kubernetes code/kubernetes \
+            > static/data/k8s_feature_toggles.tsv
+      - name: Extract GitLab feature flags
+        run: |
+          python ../tools/extract-toogles.py gitlab code/gitlab \
+            > static/data/gitlab_feature_flags.tsv
+      - name: Commit and push data
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add static/data/*.tsv
+          git commit -m "Automated update of feature toggles data" || echo "No changes"
+          git push
