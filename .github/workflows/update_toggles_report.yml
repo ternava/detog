@@ -1,4 +1,6 @@
 name: Update Feature Toggles Data
+permissions:
+  contents: write
 
 on:
   schedule:
