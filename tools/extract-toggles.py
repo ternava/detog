@@ -7,27 +7,30 @@ FEATURE_PATTERNS = {
 }
 
 @click.command()
-@click.argument("project", type=click.Choice(["kubernetes","gitlab"]))
-@click.argument("root", type=click.Path(exists=True))
-def main(project, root):
+@click.argument('project')
+@click.argument('repo_path')
+def main(project, repo_path):
     pat = FEATURE_PATTERNS[project]
-    for dirpath, _, files in os.walk(root):
+    for dirpath, _, files in os.walk(repo_path):
         for fname in files:
             if project=="kubernetes" and fname.endswith(".go"):
                 text = open(os.path.join(dirpath,fname)).read()
                 for m in pat.finditer(text):
-                    print(f"{project}\t{m.group(1)}\t{dirpath}/{fname}")
+                    toggle = m.group(1)
+                    file_path = os.path.join(dirpath, fname)
+                    date = subprocess.check_output([
+                        "git", "-C", repo_path, "log", "-1", "--format=%ci", file_path
+                    ]).decode('utf-8').strip()
+                    print(f"{project}\t{toggle}\t{date}")
             elif project=="gitlab" and fname.endswith(".yml"):
                 # treat each YAML under root as a feature flag
                 flag_name = os.path.splitext(fname)[0]
-                print(f"{project}\t{flag_name}\t{dirpath}/{fname}")
+                file_path = os.path.join(dirpath, fname)
+                date = subprocess.check_output([
+                    "git", "-C", repo_path, "log", "-1", "--format=%ci", file_path
+                ]).decode('utf-8').strip()
+                print(f"{project}\t{flag_name}\t{date}")
             else:
                 continue
-            # get date for this version/tag
-            date = subprocess.check_output([
-                "git", "-C", repo_path, "log", "-1", "--format=%ci", version
-            ]).decode('utf-8').strip()
-            # print name, version, and date
-            print(f"{toggle}\t{version}\t{date}")
 if __name__=="__main__":
     main()
