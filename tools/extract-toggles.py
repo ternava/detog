@@ -19,15 +19,18 @@ def main(project, repo_path):
                     toggle = m.group(1)
                     file_path = os.path.join(dirpath, fname)
                     date = subprocess.check_output([
-                        "git", "-C", repo_path, "log", "-1", "--format=%ci", file_path
+                        "git", "-C", repo_path, "log", "-1", "--format=%ci", "--", file_path
                     ]).decode('utf-8').strip()
                     print(f"{project}\t{toggle}\t{date}")
             elif project=="gitlab" and fname.endswith(".yml"):
                 # treat each YAML under root as a feature flag
                 flag_name = os.path.splitext(fname)[0]
                 file_path = os.path.join(dirpath, fname)
+                # skip vendored dependencies
+                if 'vendor' in file_path:
+                    continue
                 date = subprocess.check_output([
-                    "git", "-C", repo_path, "log", "-1", "--format=%ci", file_path
+                    "git", "-C", repo_path, "log", "-1", "--format=%ci", "--", file_path
                 ]).decode('utf-8').strip()
                 print(f"{project}\t{flag_name}\t{date}")
             else:
