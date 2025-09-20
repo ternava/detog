@@ -40,6 +40,9 @@ jobs:
         run: |
           python $GITHUB_WORKSPACE/tools/extract-toggles.py gitlab code/gitlab \
             > static/data/gitlab_feature_flags.tsv
+      - name: Extract Kubernetes toggles by release
+        run: |
+          python tools/extract-k8s-releases.py code/kubernetes > static/data/k8s_releases.tsv
       - name: Commit and push data
         run: |
           git config user.name github-actions
