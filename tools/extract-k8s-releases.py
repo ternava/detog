@@ -16,9 +16,16 @@ def main(repo_path):
             "git", "-C", repo_path, "log", "-1", "--format=%ci", tag
         ]).decode().strip()
         # find toggles at this tag
-        lines = subprocess.check_output([
-            "git", "-C", repo_path, "grep", "-h", "-o", "featuregate.Feature = [^\"]+\"", tag, "--", "*.go"
-        ]).decode().splitlines()
+        try:
+            output = subprocess.check_output([
+                "git", "-C", repo_path,
+                "grep", "-h", "-E", "-o",
+                'featuregate.Feature = "[^"]+"',
+                tag, "--", "*.go"
+            ])
+            lines = output.decode().splitlines()
+        except subprocess.CalledProcessError:
+            lines = []
         # extract unique names
         toggles = set(FEATURE_PATTERN.search(l).group(1) for l in lines if FEATURE_PATTERN.search(l))
         print(f"{tag}\t{len(toggles)}\t{date}")
