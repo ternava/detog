@@ -7,8 +7,7 @@ url = "/toggles-chart/"
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
-  Plotly.d3.tsv("/data/k8s_releases.tsv", function(err, rows) {
-    console.log('Loaded rows:', rows);
+  Plotly.d3.tsv('{{ "data/k8s_releases.tsv" | relURL }}', function(err, rows) {
     if (err) return console.error(err);
     const dates = rows.map(r => new Date(r.date));
     const counts = rows.map(r => +r.count);
