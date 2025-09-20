@@ -16,6 +16,7 @@ jobs:
       - name: Clone Kubernetes repository
         run: |
           git clone --depth 1 https://github.com/kubernetes/kubernetes.git code/kubernetes
+          git -C code/kubernetes fetch --tags
       - name: Clone GitLab repository
         run: |
           git clone --depth 1 https://gitlab.com/gitlab-org/gitlab.git code/gitlab
