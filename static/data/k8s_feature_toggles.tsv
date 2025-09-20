@@ -1,216 +1,216 @@
-kubernetes	MyFeature	code/kubernetes/vendor/go.etcd.io/etcd/server/v3/features/etcd_features.go
-kubernetes	StopGRPCServiceOnDefrag	code/kubernetes/vendor/go.etcd.io/etcd/server/v3/features/etcd_features.go
-kubernetes	TxnModeWriteWithSharedBuffer	code/kubernetes/vendor/go.etcd.io/etcd/server/v3/features/etcd_features.go
-kubernetes	InitialCorruptCheck	code/kubernetes/vendor/go.etcd.io/etcd/server/v3/features/etcd_features.go
-kubernetes	CompactHashCheck	code/kubernetes/vendor/go.etcd.io/etcd/server/v3/features/etcd_features.go
-kubernetes	LeaseCheckpoint	code/kubernetes/vendor/go.etcd.io/etcd/server/v3/features/etcd_features.go
-kubernetes	LeaseCheckpointPersist	code/kubernetes/vendor/go.etcd.io/etcd/server/v3/features/etcd_features.go
-kubernetes	SetMemberLocalAddr	code/kubernetes/vendor/go.etcd.io/etcd/server/v3/features/etcd_features.go
-kubernetes	Test	code/kubernetes/test/e2e/framework/internal/unittests/features/kube_features.go
-kubernetes	TestAlphaFeature	code/kubernetes/test/e2e/framework/internal/unittests/bugs/features/features.go
-kubernetes	TestBetaFeature	code/kubernetes/test/e2e/framework/internal/unittests/bugs/features/features.go
-kubernetes	TestBetaDefaultOffFeature	code/kubernetes/test/e2e/framework/internal/unittests/bugs/features/features.go
-kubernetes	TestGAFeature	code/kubernetes/test/e2e/framework/internal/unittests/bugs/features/features.go
-kubernetes	ComponentSLIs	code/kubernetes/test/compatibility_lifecycle/cmd/feature_gates_test.go
-kubernetes	ComponentSLIs	code/kubernetes/test/compatibility_lifecycle/cmd/feature_gates_test.go
-kubernetes	MyFeature	code/kubernetes/staging/src/k8s.io/controller-manager/pkg/features/kube_features.go
-kubernetes	CloudControllerManagerWebhook	code/kubernetes/staging/src/k8s.io/controller-manager/pkg/features/kube_features.go
-kubernetes	MyFeature	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	APIResponseCompression	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	APIServerIdentity	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	APIServerTracing	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	APIServingWithRoutine	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	AggregatedDiscoveryRemoveBetaType	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	AllowParsingUserUIDFromCertAuth	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	AllowUnsafeMalformedObjectDeletion	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	AnonymousAuthConfigurableEndpoints	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	AuthorizeWithSelectors	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	BtreeWatchCache	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	CBORServingAndStorage	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	ConcurrentWatchObjectDecode	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	ConsistentListFromCache	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	CoordinatedLeaderElection	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	DetectCacheInconsistency	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	KMSv1	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	ListFromCacheSnapshot	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	MutatingAdmissionPolicy	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	OpenAPIEnums	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	RemoteRequestHeaderUID	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	ResilientWatchCacheInitialization	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	RetryGenerateName	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	SeparateCacheWatchRPC	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	SizeBasedListCostEstimate	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	StorageVersionAPI	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	StorageVersionHash	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	StreamingCollectionEncodingToJSON	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	StreamingCollectionEncodingToProtobuf	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	StrictCostEnforcementForVAP	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	StrictCostEnforcementForWebhooks	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	StructuredAuthenticationConfiguration	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	StructuredAuthenticationConfigurationEgressSelector	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	StructuredAuthorizationConfiguration	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	TokenRequestServiceAccountUIDValidation	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	UnauthenticatedHTTP2DOSMitigation	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	WatchCacheInitializationPostStartHook	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	WatchFromStorageWithoutResourceVersion	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	WatchList	code/kubernetes/staging/src/k8s.io/apiserver/pkg/features/kube_features.go
-kubernetes	ComponentFlagz	code/kubernetes/staging/src/k8s.io/component-base/zpages/features/kube_features.go
-kubernetes	ComponentStatusz	code/kubernetes/staging/src/k8s.io/component-base/zpages/features/kube_features.go
-kubernetes	ContextualLogging	code/kubernetes/staging/src/k8s.io/component-base/logs/api/v1/kube_features.go
-kubernetes	LoggingAlphaOptions	code/kubernetes/staging/src/k8s.io/component-base/logs/api/v1/kube_features.go
-kubernetes	LoggingBetaOptions	code/kubernetes/staging/src/k8s.io/component-base/logs/api/v1/kube_features.go
-kubernetes	LoggingStableOptions	code/kubernetes/staging/src/k8s.io/component-base/logs/api/v1/kube_features.go
-kubernetes	CRDValidationRatcheting	code/kubernetes/staging/src/k8s.io/apiextensions-apiserver/pkg/features/kube_features.go
-kubernetes	CustomResourceFieldSelectors	code/kubernetes/staging/src/k8s.io/apiextensions-apiserver/pkg/features/kube_features.go
-kubernetes	MyFeature	code/kubernetes/staging/src/k8s.io/client-go/features/known_features.go
-kubernetes	MyFeature	code/kubernetes/pkg/features/kube_features.go
-kubernetes	AllowDNSOnlyNodeCSR	code/kubernetes/pkg/features/kube_features.go
-kubernetes	AllowInsecureKubeletCertificateSigningRequests	code/kubernetes/pkg/features/kube_features.go
-kubernetes	AllowOverwriteTerminationGracePeriodSeconds	code/kubernetes/pkg/features/kube_features.go
-kubernetes	AllowServiceLBStatusOnNonLB	code/kubernetes/pkg/features/kube_features.go
-kubernetes	AnyVolumeDataSource	code/kubernetes/pkg/features/kube_features.go
-kubernetes	AuthorizeNodeWithSelectors	code/kubernetes/pkg/features/kube_features.go
-kubernetes	CustomCPUCFSQuotaPeriod	code/kubernetes/pkg/features/kube_features.go
-kubernetes	CPUManagerPolicyAlphaOptions	code/kubernetes/pkg/features/kube_features.go
-kubernetes	CPUManagerPolicyBetaOptions	code/kubernetes/pkg/features/kube_features.go
-kubernetes	CPUManagerPolicyOptions	code/kubernetes/pkg/features/kube_features.go
-kubernetes	CSIMigrationPortworx	code/kubernetes/pkg/features/kube_features.go
-kubernetes	CSIVolumeHealth	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ClearingNominatedNodeNameAfterBinding	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ClusterTrustBundle	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ClusterTrustBundleProjection	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ContainerCheckpoint	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ContainerRestartRules	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ContainerStopSignals	code/kubernetes/pkg/features/kube_features.go
-kubernetes	CoordinatedLeaderElection	code/kubernetes/pkg/features/kube_features.go
-kubernetes	CrossNamespaceVolumeDataSource	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DRAAdminAccess	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DRAConsumableCapacity	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DRADeviceBindingConditions	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DRADeviceTaints	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DRAExtendedResource	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DRAPartitionableDevices	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DRAPrioritizedList	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DRAResourceClaimDeviceStatus	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DRASchedulerFilterTimeout	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DeclarativeValidation	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DeclarativeValidationTakeover	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DeploymentReplicaSetTerminatingReplicas	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DisableAllocatorDualWrite	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DisableCPUQuotaWithExclusiveCPUs	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DisableNodeKubeProxyVersion	code/kubernetes/pkg/features/kube_features.go
-kubernetes	DynamicResourceAllocation	code/kubernetes/pkg/features/kube_features.go
-kubernetes	EnvFiles	code/kubernetes/pkg/features/kube_features.go
-kubernetes	EventedPLEG	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ExecProbeTimeout	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ExternalServiceAccountTokenSigner	code/kubernetes/pkg/features/kube_features.go
-kubernetes	GitRepoVolumeDriver	code/kubernetes/pkg/features/kube_features.go
-kubernetes	GracefulNodeShutdown	code/kubernetes/pkg/features/kube_features.go
-kubernetes	GracefulNodeShutdownBasedOnPodPriority	code/kubernetes/pkg/features/kube_features.go
-kubernetes	HPAConfigurableTolerance	code/kubernetes/pkg/features/kube_features.go
-kubernetes	HPAScaleToZero	code/kubernetes/pkg/features/kube_features.go
-kubernetes	HonorPVReclaimPolicy	code/kubernetes/pkg/features/kube_features.go
-kubernetes	HostnameOverride	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ImageMaximumGCAge	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ImageVolume	code/kubernetes/pkg/features/kube_features.go
-kubernetes	InPlacePodVerticalScaling	code/kubernetes/pkg/features/kube_features.go
-kubernetes	InPlacePodVerticalScalingAllocatedStatus	code/kubernetes/pkg/features/kube_features.go
-kubernetes	InPlacePodVerticalScalingExclusiveCPUs	code/kubernetes/pkg/features/kube_features.go
-kubernetes	InPlacePodVerticalScalingExclusiveMemory	code/kubernetes/pkg/features/kube_features.go
-kubernetes	InTreePluginPortworxUnregister	code/kubernetes/pkg/features/kube_features.go
-kubernetes	JobBackoffLimitPerIndex	code/kubernetes/pkg/features/kube_features.go
-kubernetes	JobManagedBy	code/kubernetes/pkg/features/kube_features.go
-kubernetes	JobPodReplacementPolicy	code/kubernetes/pkg/features/kube_features.go
-kubernetes	JobSuccessPolicy	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletCgroupDriverFromCRI	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletCrashLoopBackOffMax	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletEnsureSecretPulledImages	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletFineGrainedAuthz	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletInUserNamespace	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletPSI	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletPodResourcesDynamicResources	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletPodResourcesGet	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletPodResourcesListUseActivePods	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletRegistrationGetOnExistsOnly	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletSeparateDiskGC	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletServiceAccountTokenForCredentialProviders	code/kubernetes/pkg/features/kube_features.go
-kubernetes	KubeletTracing	code/kubernetes/pkg/features/kube_features.go
-kubernetes	LoadBalancerIPMode	code/kubernetes/pkg/features/kube_features.go
-kubernetes	LocalStorageCapacityIsolationFSQuotaMonitoring	code/kubernetes/pkg/features/kube_features.go
-kubernetes	LogarithmicScaleDown	code/kubernetes/pkg/features/kube_features.go
-kubernetes	MatchLabelKeysInPodAffinity	code/kubernetes/pkg/features/kube_features.go
-kubernetes	MatchLabelKeysInPodTopologySpread	code/kubernetes/pkg/features/kube_features.go
-kubernetes	MatchLabelKeysInPodTopologySpreadSelectorMerge	code/kubernetes/pkg/features/kube_features.go
-kubernetes	MaxUnavailableStatefulSet	code/kubernetes/pkg/features/kube_features.go
-kubernetes	MemoryManager	code/kubernetes/pkg/features/kube_features.go
-kubernetes	MemoryQoS	code/kubernetes/pkg/features/kube_features.go
-kubernetes	MultiCIDRServiceAllocator	code/kubernetes/pkg/features/kube_features.go
-kubernetes	MutableCSINodeAllocatableCount	code/kubernetes/pkg/features/kube_features.go
-kubernetes	NFTablesProxyMode	code/kubernetes/pkg/features/kube_features.go
-kubernetes	NodeInclusionPolicyInPodTopologySpread	code/kubernetes/pkg/features/kube_features.go
-kubernetes	NodeLogQuery	code/kubernetes/pkg/features/kube_features.go
-kubernetes	NodeSwap	code/kubernetes/pkg/features/kube_features.go
-kubernetes	NominatedNodeNameForExpectation	code/kubernetes/pkg/features/kube_features.go
-kubernetes	OrderedNamespaceDeletion	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PodAndContainerStatsFromCRI	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PodCertificateRequest	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PodDeletionCost	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PodLevelResources	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PodLifecycleSleepAction	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PodLifecycleSleepActionAllowZero	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PodLogsQuerySplitStreams	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PodObservedGenerationTracking	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PodReadyToStartContainersCondition	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PodSchedulingReadiness	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PodTopologyLabelsAdmission	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PortForwardWebsockets	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PreferSameTrafficDistribution	code/kubernetes/pkg/features/kube_features.go
-kubernetes	PreventStaticPodAPIReferences	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ProcMountType	code/kubernetes/pkg/features/kube_features.go
-kubernetes	QOSReserved	code/kubernetes/pkg/features/kube_features.go
-kubernetes	RecoverVolumeExpansionFailure	code/kubernetes/pkg/features/kube_features.go
-kubernetes	RecursiveReadOnlyMounts	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ReduceDefaultCrashLoopBackOffDecay	code/kubernetes/pkg/features/kube_features.go
-kubernetes	RelaxedDNSSearchValidation	code/kubernetes/pkg/features/kube_features.go
-kubernetes	RelaxedEnvironmentVariableValidation	code/kubernetes/pkg/features/kube_features.go
-kubernetes	RelaxedServiceNameValidation	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ReloadKubeletServerCertificateFile	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ResourceHealthStatus	code/kubernetes/pkg/features/kube_features.go
-kubernetes	RotateKubeletServerCertificate	code/kubernetes/pkg/features/kube_features.go
-kubernetes	RuntimeClassInImageCriApi	code/kubernetes/pkg/features/kube_features.go
-kubernetes	SELinuxChangePolicy	code/kubernetes/pkg/features/kube_features.go
-kubernetes	SELinuxMount	code/kubernetes/pkg/features/kube_features.go
-kubernetes	SELinuxMountReadWriteOncePod	code/kubernetes/pkg/features/kube_features.go
-kubernetes	SchedulerAsyncAPICalls	code/kubernetes/pkg/features/kube_features.go
-kubernetes	SchedulerAsyncPreemption	code/kubernetes/pkg/features/kube_features.go
-kubernetes	SchedulerPopFromBackoffQ	code/kubernetes/pkg/features/kube_features.go
-kubernetes	SchedulerQueueingHints	code/kubernetes/pkg/features/kube_features.go
-kubernetes	SeparateTaintEvictionController	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ServiceAccountNodeAudienceRestriction	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ServiceAccountTokenJTI	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ServiceAccountTokenNodeBinding	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ServiceAccountTokenNodeBindingValidation	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ServiceAccountTokenPodNodeInfo	code/kubernetes/pkg/features/kube_features.go
-kubernetes	ServiceTrafficDistribution	code/kubernetes/pkg/features/kube_features.go
-kubernetes	SidecarContainers	code/kubernetes/pkg/features/kube_features.go
-kubernetes	StorageCapacityScoring	code/kubernetes/pkg/features/kube_features.go
-kubernetes	StorageNamespaceIndex	code/kubernetes/pkg/features/kube_features.go
-kubernetes	StorageVersionMigrator	code/kubernetes/pkg/features/kube_features.go
-kubernetes	StreamingCollectionEncodingToJSON	code/kubernetes/pkg/features/kube_features.go
-kubernetes	StreamingCollectionEncodingToProtobuf	code/kubernetes/pkg/features/kube_features.go
-kubernetes	StrictIPCIDRValidation	code/kubernetes/pkg/features/kube_features.go
-kubernetes	SupplementalGroupsPolicy	code/kubernetes/pkg/features/kube_features.go
-kubernetes	TopologyAwareHints	code/kubernetes/pkg/features/kube_features.go
-kubernetes	TopologyManagerPolicyAlphaOptions	code/kubernetes/pkg/features/kube_features.go
-kubernetes	TopologyManagerPolicyBetaOptions	code/kubernetes/pkg/features/kube_features.go
-kubernetes	TopologyManagerPolicyOptions	code/kubernetes/pkg/features/kube_features.go
-kubernetes	TranslateStreamCloseWebsocketRequests	code/kubernetes/pkg/features/kube_features.go
-kubernetes	UnknownVersionInteroperabilityProxy	code/kubernetes/pkg/features/kube_features.go
-kubernetes	UserNamespacesPodSecurityStandards	code/kubernetes/pkg/features/kube_features.go
-kubernetes	UserNamespacesSupport	code/kubernetes/pkg/features/kube_features.go
-kubernetes	VolumeAttributesClass	code/kubernetes/pkg/features/kube_features.go
-kubernetes	WinDSR	code/kubernetes/pkg/features/kube_features.go
-kubernetes	WinOverlay	code/kubernetes/pkg/features/kube_features.go
-kubernetes	WindowsCPUAndMemoryAffinity	code/kubernetes/pkg/features/kube_features.go
-kubernetes	WindowsGracefulNodeShutdown	code/kubernetes/pkg/features/kube_features.go
-kubernetes	WindowsHostNetwork	code/kubernetes/pkg/features/kube_features.go
+kubernetes	MyFeature	
+kubernetes	StopGRPCServiceOnDefrag	
+kubernetes	TxnModeWriteWithSharedBuffer	
+kubernetes	InitialCorruptCheck	
+kubernetes	CompactHashCheck	
+kubernetes	LeaseCheckpoint	
+kubernetes	LeaseCheckpointPersist	
+kubernetes	SetMemberLocalAddr	
+kubernetes	Test	
+kubernetes	TestAlphaFeature	
+kubernetes	TestBetaFeature	
+kubernetes	TestBetaDefaultOffFeature	
+kubernetes	TestGAFeature	
+kubernetes	ComponentSLIs	
+kubernetes	ComponentSLIs	
+kubernetes	MyFeature	
+kubernetes	CloudControllerManagerWebhook	
+kubernetes	MyFeature	
+kubernetes	APIResponseCompression	
+kubernetes	APIServerIdentity	
+kubernetes	APIServerTracing	
+kubernetes	APIServingWithRoutine	
+kubernetes	AggregatedDiscoveryRemoveBetaType	
+kubernetes	AllowParsingUserUIDFromCertAuth	
+kubernetes	AllowUnsafeMalformedObjectDeletion	
+kubernetes	AnonymousAuthConfigurableEndpoints	
+kubernetes	AuthorizeWithSelectors	
+kubernetes	BtreeWatchCache	
+kubernetes	CBORServingAndStorage	
+kubernetes	ConcurrentWatchObjectDecode	
+kubernetes	ConsistentListFromCache	
+kubernetes	CoordinatedLeaderElection	
+kubernetes	DetectCacheInconsistency	
+kubernetes	KMSv1	
+kubernetes	ListFromCacheSnapshot	
+kubernetes	MutatingAdmissionPolicy	
+kubernetes	OpenAPIEnums	
+kubernetes	RemoteRequestHeaderUID	
+kubernetes	ResilientWatchCacheInitialization	
+kubernetes	RetryGenerateName	
+kubernetes	SeparateCacheWatchRPC	
+kubernetes	SizeBasedListCostEstimate	
+kubernetes	StorageVersionAPI	
+kubernetes	StorageVersionHash	
+kubernetes	StreamingCollectionEncodingToJSON	
+kubernetes	StreamingCollectionEncodingToProtobuf	
+kubernetes	StrictCostEnforcementForVAP	
+kubernetes	StrictCostEnforcementForWebhooks	
+kubernetes	StructuredAuthenticationConfiguration	
+kubernetes	StructuredAuthenticationConfigurationEgressSelector	
+kubernetes	StructuredAuthorizationConfiguration	
+kubernetes	TokenRequestServiceAccountUIDValidation	
+kubernetes	UnauthenticatedHTTP2DOSMitigation	
+kubernetes	WatchCacheInitializationPostStartHook	
+kubernetes	WatchFromStorageWithoutResourceVersion	
+kubernetes	WatchList	
+kubernetes	ComponentFlagz	
+kubernetes	ComponentStatusz	
+kubernetes	ContextualLogging	
+kubernetes	LoggingAlphaOptions	
+kubernetes	LoggingBetaOptions	
+kubernetes	LoggingStableOptions	
+kubernetes	CRDValidationRatcheting	
+kubernetes	CustomResourceFieldSelectors	
+kubernetes	MyFeature	
+kubernetes	MyFeature	
+kubernetes	AllowDNSOnlyNodeCSR	
+kubernetes	AllowInsecureKubeletCertificateSigningRequests	
+kubernetes	AllowOverwriteTerminationGracePeriodSeconds	
+kubernetes	AllowServiceLBStatusOnNonLB	
+kubernetes	AnyVolumeDataSource	
+kubernetes	AuthorizeNodeWithSelectors	
+kubernetes	CustomCPUCFSQuotaPeriod	
+kubernetes	CPUManagerPolicyAlphaOptions	
+kubernetes	CPUManagerPolicyBetaOptions	
+kubernetes	CPUManagerPolicyOptions	
+kubernetes	CSIMigrationPortworx	
+kubernetes	CSIVolumeHealth	
+kubernetes	ClearingNominatedNodeNameAfterBinding	
+kubernetes	ClusterTrustBundle	
+kubernetes	ClusterTrustBundleProjection	
+kubernetes	ContainerCheckpoint	
+kubernetes	ContainerRestartRules	
+kubernetes	ContainerStopSignals	
+kubernetes	CoordinatedLeaderElection	
+kubernetes	CrossNamespaceVolumeDataSource	
+kubernetes	DRAAdminAccess	
+kubernetes	DRAConsumableCapacity	
+kubernetes	DRADeviceBindingConditions	
+kubernetes	DRADeviceTaints	
+kubernetes	DRAExtendedResource	
+kubernetes	DRAPartitionableDevices	
+kubernetes	DRAPrioritizedList	
+kubernetes	DRAResourceClaimDeviceStatus	
+kubernetes	DRASchedulerFilterTimeout	
+kubernetes	DeclarativeValidation	
+kubernetes	DeclarativeValidationTakeover	
+kubernetes	DeploymentReplicaSetTerminatingReplicas	
+kubernetes	DisableAllocatorDualWrite	
+kubernetes	DisableCPUQuotaWithExclusiveCPUs	
+kubernetes	DisableNodeKubeProxyVersion	
+kubernetes	DynamicResourceAllocation	
+kubernetes	EnvFiles	
+kubernetes	EventedPLEG	
+kubernetes	ExecProbeTimeout	
+kubernetes	ExternalServiceAccountTokenSigner	
+kubernetes	GitRepoVolumeDriver	
+kubernetes	GracefulNodeShutdown	
+kubernetes	GracefulNodeShutdownBasedOnPodPriority	
+kubernetes	HPAConfigurableTolerance	
+kubernetes	HPAScaleToZero	
+kubernetes	HonorPVReclaimPolicy	
+kubernetes	HostnameOverride	
+kubernetes	ImageMaximumGCAge	
+kubernetes	ImageVolume	
+kubernetes	InPlacePodVerticalScaling	
+kubernetes	InPlacePodVerticalScalingAllocatedStatus	
+kubernetes	InPlacePodVerticalScalingExclusiveCPUs	
+kubernetes	InPlacePodVerticalScalingExclusiveMemory	
+kubernetes	InTreePluginPortworxUnregister	
+kubernetes	JobBackoffLimitPerIndex	
+kubernetes	JobManagedBy	
+kubernetes	JobPodReplacementPolicy	
+kubernetes	JobSuccessPolicy	
+kubernetes	KubeletCgroupDriverFromCRI	
+kubernetes	KubeletCrashLoopBackOffMax	
+kubernetes	KubeletEnsureSecretPulledImages	
+kubernetes	KubeletFineGrainedAuthz	
+kubernetes	KubeletInUserNamespace	
+kubernetes	KubeletPSI	
+kubernetes	KubeletPodResourcesDynamicResources	
+kubernetes	KubeletPodResourcesGet	
+kubernetes	KubeletPodResourcesListUseActivePods	
+kubernetes	KubeletRegistrationGetOnExistsOnly	
+kubernetes	KubeletSeparateDiskGC	
+kubernetes	KubeletServiceAccountTokenForCredentialProviders	
+kubernetes	KubeletTracing	
+kubernetes	LoadBalancerIPMode	
+kubernetes	LocalStorageCapacityIsolationFSQuotaMonitoring	
+kubernetes	LogarithmicScaleDown	
+kubernetes	MatchLabelKeysInPodAffinity	
+kubernetes	MatchLabelKeysInPodTopologySpread	
+kubernetes	MatchLabelKeysInPodTopologySpreadSelectorMerge	
+kubernetes	MaxUnavailableStatefulSet	
+kubernetes	MemoryManager	
+kubernetes	MemoryQoS	
+kubernetes	MultiCIDRServiceAllocator	
+kubernetes	MutableCSINodeAllocatableCount	
+kubernetes	NFTablesProxyMode	
+kubernetes	NodeInclusionPolicyInPodTopologySpread	
+kubernetes	NodeLogQuery	
+kubernetes	NodeSwap	
+kubernetes	NominatedNodeNameForExpectation	
+kubernetes	OrderedNamespaceDeletion	
+kubernetes	PodAndContainerStatsFromCRI	
+kubernetes	PodCertificateRequest	
+kubernetes	PodDeletionCost	
+kubernetes	PodLevelResources	
+kubernetes	PodLifecycleSleepAction	
+kubernetes	PodLifecycleSleepActionAllowZero	
+kubernetes	PodLogsQuerySplitStreams	
+kubernetes	PodObservedGenerationTracking	
+kubernetes	PodReadyToStartContainersCondition	
+kubernetes	PodSchedulingReadiness	
+kubernetes	PodTopologyLabelsAdmission	
+kubernetes	PortForwardWebsockets	
+kubernetes	PreferSameTrafficDistribution	
+kubernetes	PreventStaticPodAPIReferences	
+kubernetes	ProcMountType	
+kubernetes	QOSReserved	
+kubernetes	RecoverVolumeExpansionFailure	
+kubernetes	RecursiveReadOnlyMounts	
+kubernetes	ReduceDefaultCrashLoopBackOffDecay	
+kubernetes	RelaxedDNSSearchValidation	
+kubernetes	RelaxedEnvironmentVariableValidation	
+kubernetes	RelaxedServiceNameValidation	
+kubernetes	ReloadKubeletServerCertificateFile	
+kubernetes	ResourceHealthStatus	
+kubernetes	RotateKubeletServerCertificate	
+kubernetes	RuntimeClassInImageCriApi	
+kubernetes	SELinuxChangePolicy	
+kubernetes	SELinuxMount	
+kubernetes	SELinuxMountReadWriteOncePod	
+kubernetes	SchedulerAsyncAPICalls	
+kubernetes	SchedulerAsyncPreemption	
+kubernetes	SchedulerPopFromBackoffQ	
+kubernetes	SchedulerQueueingHints	
+kubernetes	SeparateTaintEvictionController	
+kubernetes	ServiceAccountNodeAudienceRestriction	
+kubernetes	ServiceAccountTokenJTI	
+kubernetes	ServiceAccountTokenNodeBinding	
+kubernetes	ServiceAccountTokenNodeBindingValidation	
+kubernetes	ServiceAccountTokenPodNodeInfo	
+kubernetes	ServiceTrafficDistribution	
+kubernetes	SidecarContainers	
+kubernetes	StorageCapacityScoring	
+kubernetes	StorageNamespaceIndex	
+kubernetes	StorageVersionMigrator	
+kubernetes	StreamingCollectionEncodingToJSON	
+kubernetes	StreamingCollectionEncodingToProtobuf	
+kubernetes	StrictIPCIDRValidation	
+kubernetes	SupplementalGroupsPolicy	
+kubernetes	TopologyAwareHints	
+kubernetes	TopologyManagerPolicyAlphaOptions	
+kubernetes	TopologyManagerPolicyBetaOptions	
+kubernetes	TopologyManagerPolicyOptions	
+kubernetes	TranslateStreamCloseWebsocketRequests	
+kubernetes	UnknownVersionInteroperabilityProxy	
+kubernetes	UserNamespacesPodSecurityStandards	
+kubernetes	UserNamespacesSupport	
+kubernetes	VolumeAttributesClass	
+kubernetes	WinDSR	
+kubernetes	WinOverlay	
+kubernetes	WindowsCPUAndMemoryAffinity	
+kubernetes	WindowsGracefulNodeShutdown	
+kubernetes	WindowsHostNetwork	
