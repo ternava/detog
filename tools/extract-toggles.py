@@ -10,6 +10,8 @@ FEATURE_PATTERNS = {
 @click.argument('project')
 @click.argument('repo_path')
 def main(project, repo_path):
+    # output header for TSV
+    print("project\ttoggle\tdate")
     pat = FEATURE_PATTERNS[project]
     for dirpath, _, files in os.walk(repo_path):
         for fname in files:
