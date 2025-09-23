@@ -1618,7 +1618,6 @@ gitlab	collect_scheduled_security_policy_not_enforced_audit_events
 gitlab	project_security_dashboard_new	
 gitlab	vulnerability_report_type_scanner_filter	
 gitlab	ai_prompts_v2	
-gitlab	audit_events_external_destination_streamer_consolidation_refactor	
 gitlab	custom_admin_roles	
 gitlab	security_policies_csp	
 gitlab	secret_detection_validity_checks_refresh_token	
@@ -1692,7 +1691,6 @@ gitlab	duo_include_context_local_git
 gitlab	preload_member_roles	
 gitlab	duo_pro_trial_single_form	
 gitlab	duo_workflow_use_composite_identity	
-gitlab	show_only_active_vulnerabilities_on_the_dependency_list	
 gitlab	turn_off_vulnerability_read_create_db_trigger_function	
 gitlab	duo_workflow_cloud_connector_url	
 gitlab	active_context_code_indexer_check_force_push	
@@ -6198,7 +6196,6 @@ gitlab	importer_user_mapping_allow_bypass_of_confirmation
 gitlab	rapid_diffs_on_compare_show	
 gitlab	work_items_project_issues_list	
 gitlab	validate_label_link_parent_presence_on_import	
-gitlab	merge_request_dashboard	
 gitlab	github_user_mapping	
 gitlab	incremental_cache_for_refs	
 gitlab	new_default_for_auto_stop	
@@ -6265,7 +6262,6 @@ gitlab	experimental_group_o11y_settings_access
 gitlab	authorize_issue_types_in_finder	
 gitlab	project_deploy_token_expiring_notifications	
 gitlab	read_audit_events_from_new_tables	
-gitlab	persisted_job_environment_relationship	
 gitlab	active_context_code_incremental_index_project	
 gitlab	concurrency_limit_current_limit_from_redis	
 gitlab	container_registry_protected_containers_delete	
@@ -6285,6 +6281,7 @@ gitlab	rebase_on_merge_automatic
 gitlab	snowplow_sync_emitter	
 gitlab	limit_commit_markdown_preload	
 gitlab	merge_requests_diff_commits_limit	
+gitlab	packages_refactor_group_packages_finder	
 gitlab	disallow_immediate_deletion	
 gitlab	gpg_commit_delegate_to_signature	
 gitlab	markdown_placeholders	
@@ -6319,8 +6316,10 @@ gitlab	optimized_commit_storage
 gitlab	omniauth_step_up_auth_for_namespace	
 gitlab	commit_time_tracking	
 gitlab	deduplicate_new_path_value	
+gitlab	ci_improved_destroy_old_pipelines_worker	
 gitlab	update_work_item_traversal_ids_on_transfer	
 gitlab	truncate_build_names	
+gitlab	environment_attributes_from_job_environment	
 gitlab	slsa_provenance_statement	
 gitlab	replicate_deletion_schedule_operations	
 gitlab	ignore_supported_cwe_list_check	
@@ -6420,7 +6419,6 @@ gitlab	suggested_reviewers_internal_api
 gitlab	show_gitlab_agent_feedback	
 gitlab	split_log_bulk_increment_counter	
 gitlab	ci_trace_log_invalid_chunks	
-gitlab	optimize_batched_migrations	
 gitlab	additional_snowplow_tracking	
 gitlab	loose_foreign_keys_turbo_mode_ci	
 gitlab	ci_partitioning_analyze_queries	
@@ -7515,6 +7513,7 @@ gitlab	virtual_registries_packages_maven_registries
 gitlab	bulk_import_entities	
 gitlab	audit_events_streaming_http_instance_namespace_filters	
 gitlab	approval_group_rules_protected_branches	
+gitlab	packages_package_file_states	
 gitlab	issue_emails	
 gitlab	design_management_designs_versions	
 gitlab	reviews	
@@ -7695,6 +7694,7 @@ gitlab	postgres_async_foreign_key_validations
 gitlab	dependency_proxy_manifest_states	
 gitlab	work_item_widget_definitions	
 gitlab	project_alerting_settings	
+gitlab	oauth_access_grant_archived_records	
 gitlab	cluster_groups	
 gitlab	board_labels	
 gitlab	design_user_mentions	
@@ -8138,6 +8138,7 @@ gitlab	backfill_software_license_spdx_identifier_for_software_license_policies
 gitlab	backfill_google_instance_audit_event_destinations_fixed	
 gitlab	make_security_policy_bots_private	
 gitlab	recalculate_sharding_key_id_for_orphaned_project_runner_managers	
+gitlab	backfill_tag_name_on_ci_runner_taggings	
 gitlab	sync_unlinked_security_policy_project_links	
 gitlab	backfill_push_event_payloads_project_id	
 gitlab	fix_string_config_hashes_instance_streaming_destinations	
@@ -8282,6 +8283,7 @@ gitlab	delete_orphans_approval_project_rules2
 gitlab	recalculate_sharding_key_id_for_orphaned_project_runner_taggings	
 gitlab	backfill_merge_request_reviewers_project_id	
 gitlab	backfill_seat_assignments_table	
+gitlab	archive_revoked_access_grants	
 gitlab	backfill_terraform_modules_metadata_with_semver	
 gitlab	backfill_approval_merge_request_rules_users_project_id	
 gitlab	migrate_links_for_vulnerability_findings	
