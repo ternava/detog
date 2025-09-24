@@ -259,6 +259,7 @@ gitlab	click_ssh_key_setup_in_command_line_instructions_modal
 gitlab	20230808111529_Gitlab__Llm__Completions__Chat_process_gitlab_duo_question	
 gitlab	20210915205135_default_copy_pip_install_command	
 gitlab	trigger_ai_catalog_item	
+gitlab	delete_custom_lifecycle	
 gitlab	render_duo_core_banner	
 gitlab	20210915205217_default_click_button	
 gitlab	20210915205106_default_click_button	
@@ -1053,6 +1054,7 @@ gitlab	20220407183012_count_distinct_user_id_from_deployment_approvals
 gitlab	count_total_projects_with_validity_checks_enabled	
 gitlab	20230502122452_analytics_dashboard_views	
 gitlab	20210216182114_secret_detection_jobs	
+gitlab	count_distinct_namespace_id_from_delete_custom_lifecycle	
 gitlab	20210216180805_projects_with_compliance_framework	
 gitlab	count_distinct_user_id_from_view_project_security_attributes	
 gitlab	count_distinct_namespace_id_from_create_custom_status_in_group_settings	
@@ -1263,6 +1265,7 @@ gitlab	count_distinct_project_id_from_scan_execution_policy_triggered_for_target
 gitlab	g_analytics_contribution	
 gitlab	count_distinct_project_id_from_enforce_pipeline_execution_policy_in_project	
 gitlab	count_total_enforce_scheduled_scan_execution_policy_in_project_using_time_window	
+gitlab	count_total_delete_custom_lifecycle	
 gitlab	users_visiting_threat_insights_pages	
 gitlab	count_total_render_lead_page	
 gitlab	i_code_review_merge_request_widget_metrics_expand	
@@ -1610,6 +1613,7 @@ gitlab	security_policies_combined_list
 gitlab	dependency_graph_graphql	
 gitlab	duo_workflow	
 gitlab	duo_chat_dynamic_dimension	
+gitlab	duo_code_review_on_agent_platform	
 gitlab	advanced_context_resolver	
 gitlab	geo_proxy_push_ssh_to_primary	
 gitlab	flexible_scan_execution_policy	
@@ -1649,7 +1653,6 @@ gitlab	security_inventory_dashboard
 gitlab	dependency_paths	
 gitlab	assign_custom_roles_to_group_links_sm	
 gitlab	ai_flow_triggers	
-gitlab	custom_ability_read_admin_projects	
 gitlab	geo_proxy_fetch_ssh_to_primary	
 gitlab	work_item_children_iteration_change	
 gitlab	allow_with_code_embeddings_indexed_projects_filter	
@@ -2669,6 +2672,7 @@ gitlab	1675167870_Gitlab__Ci__Pipeline__Chain__Metrics_create_pipeline_with_name
 gitlab	click_sort_on_your_work_groups	
 gitlab	click_consolidated_edit	
 gitlab	cancel_delete_package_version	
+gitlab	click_code_dropdown	
 gitlab	click_file_list_on_repository_page	
 gitlab	click_merge_requests_that_im_a_reviewer_in_command_palette	
 gitlab	20210915205143_default_show_home_page_banner	
@@ -2690,6 +2694,7 @@ gitlab	20210915205115_packages_pull_package
 gitlab	20211215022206_default_diff_toggle_external_button_click_toggle_external_button	
 gitlab	click_group_scoped_search_to_advanced_search	
 gitlab	g_project_management_issue_designs_added	
+gitlab	open_vscode_https	
 gitlab	20211215022206_default_edit_value_stream_form_open_click_button	
 gitlab	pull_manifest	
 gitlab	view_admin_application_settings_advanced_search_pageload	
@@ -2738,6 +2743,7 @@ gitlab	toggle_merge_request_redesign
 gitlab	glci_job_failed	
 gitlab	filter_by_role_on_your_work_projects	
 gitlab	click_expand_assets_on_release_page	
+gitlab	collect_gemnasium_python_scan_performance_metrics_from_pipeline	
 gitlab	delete_package_version	
 gitlab	i_container_registry_push_tag_deploy_token	
 gitlab	spp_push_blocked_secrets_found	
@@ -2750,6 +2756,7 @@ gitlab	copy_package_asset_sha
 gitlab	g_project_management_issue_comment_removed	
 gitlab	click_file_tree_browser_on_repository_page	
 gitlab	1674504208_API__PackagesHelpers_push_package_by_deploy_token	
+gitlab	collect_gemnasium_scan_performance_metrics_from_pipeline	
 gitlab	create_wiki_page_reply_note	
 gitlab	perform_search	
 gitlab	1647273260_projectsclustersindex_open_modal	
@@ -2782,6 +2789,7 @@ gitlab	click_new_merge_request_empty_list
 gitlab	archive_namespace_in_quick_action	
 gitlab	1662373069_Projects__GoogleCloud__ConfigurationController_render_page	
 gitlab	20211215022206_default_show_labels_toggle	
+gitlab	open_vscode_ssh	
 gitlab	1654698269_merge_request_action_create	
 gitlab	gitlab_cli_command_used	
 gitlab	i_code_review_saved_replies_use	
@@ -2892,6 +2900,7 @@ gitlab	1655841364_projects_settings_cicd_show_delete
 gitlab	open_help_drawer	
 gitlab	click_remove_blob_button_repository_settings	
 gitlab	click_command_palette_item	
+gitlab	collect_gemnasium_maven_scan_metrics_from_pipeline	
 gitlab	20211215022206_default_click_button	
 gitlab	use_pagination_projects_explore	
 gitlab	i_container_registry_create_repository_deploy_token	
@@ -2938,11 +2947,13 @@ gitlab	create_wiki_page
 gitlab	request_api_proxy_access	
 gitlab	1669817630_Mutations__AlertManagement__CreateAlertIssue_incident_management_incident_created	
 gitlab	request_service_ping_via_rest	
+gitlab	click_new_directory	
 gitlab	merge_request_click_add_to_review_on_overview_tab	
 gitlab	20211215022206_default_create_or_import_a_repository_click_link	
 gitlab	1662373232_Projects__GoogleCloud__DatabasesController_render_page	
 gitlab	20210915205149_default_dismiss_banner	
 gitlab	view_todo_list	
+gitlab	collect_gemnasium_scan_metrics_from_pipeline	
 gitlab	view_incidents_list	
 gitlab	20210915205200_default_cancel_delete	
 gitlab	202109151015_package_class_pull_package	
@@ -2979,6 +2990,7 @@ gitlab	click_deployment_link_on_release_page
 gitlab	create_ci_internal_pipeline	
 gitlab	1671198983_Gitlab__UsageDataCounters__MergeRequestActivityUniqueCounter_create	
 gitlab	cli_metadata	
+gitlab	collect_gemnasium_maven_scan_sbom_metrics_from_pipeline	
 gitlab	20211215022206_default_search_autocomplete_suggestion_click_text	
 gitlab	executed	
 gitlab	20210915205151_default_click_dropdown	
@@ -3060,6 +3072,7 @@ gitlab	202109151015_projects__registry__tags_controller_delete_tag
 gitlab	i_container_registry_push_tag_user	
 gitlab	20210915205119_default_copy_composer_package_include_command	
 gitlab	iframe_loaded	
+gitlab	click_add_dropdown	
 gitlab	1669605645_Gitlab__UsageDataCounters__MergeRequestActivityUniqueCounter_approve	
 gitlab	g_project_management_issue_unlocked	
 gitlab	20230321151607_github_create	
@@ -3112,6 +3125,7 @@ gitlab	1669903273_Issues__UpdateService_incident_management_incident_change_conf
 gitlab	cancel_delete_package_versions	
 gitlab	view_admin_application_settings_roles_and_permissions_pageload	
 gitlab	202109151015_groups__registry__repositories_controller_list_repositories	
+gitlab	open_intellij_ssh	
 gitlab	20210915205111_default_change_discussion_sort_direction	
 gitlab	click_explore_projects_on_your_work_projects	
 gitlab	20211215022206_default_edit_reviewer_click_invite_members	
@@ -3123,6 +3137,7 @@ gitlab	click_create_confidential_mr_issues_list
 gitlab	click_dropdown_showing_recent_mrs_for_file_on_branch	
 gitlab	i_code_review_saved_replies_use_in_other	
 gitlab	delete_package_files	
+gitlab	click_upload_file	
 gitlab	202109151015_container_registry_notification_push_repository	
 gitlab	202109151015_api__group_container_repositories_list_repositories	
 gitlab	click_new_group_on_your_work_groups	
@@ -3178,6 +3193,7 @@ gitlab	accept_placeholder_user_reassignment
 gitlab	enabled_issue_template_on_alerts	
 gitlab	request_delete_packages	
 gitlab	update_design_management_design	
+gitlab	collect_gemnasium_scan_sbom_metrics_from_pipeline	
 gitlab	pull_blob	
 gitlab	1662373153_Projects__GoogleCloud__RevokeOauthController_error_google_oauth2_not_enabled	
 gitlab	delete_design_management_design	
@@ -3205,6 +3221,8 @@ gitlab	select_abuse_category
 gitlab	collapse_file_tree_browser_on_repository_page	
 gitlab	change_allowed_to_push_and_merge	
 gitlab	view_admin_dashboard_pageload	
+gitlab	collect_gemnasium_python_scan_metrics_from_pipeline	
+gitlab	click_new_tag	
 gitlab	create_snippet	
 gitlab	ensure_environment_for_managed_resource	
 gitlab	20230727165222_default_save_markdown	
@@ -3252,6 +3270,8 @@ gitlab	20230228151130_invite_members_modal_click_cancel
 gitlab	delete_wiki_page	
 gitlab	delete_group_wiki_page	
 gitlab	1662373103_Projects__GoogleCloud__ServiceAccountsController_create_service_account	
+gitlab	click_new_branch	
+gitlab	open_intellij_https	
 gitlab	api_request_from_runner	
 gitlab	create_design_management_design	
 gitlab	1655179517_design_actions_destroy_	
@@ -3262,12 +3282,14 @@ gitlab	delete_package_revision_from_registry
 gitlab	commit_change_to_ciconfigfile	
 gitlab	20210915205125_default_copy_gradle_install_command	
 gitlab	view_admin_groups_pageload	
+gitlab	collect_gemnasium_python_scan_sbom_metrics_from_pipeline	
 gitlab	click_commit_name	
 gitlab	authenticate_to_ldap_with_git_over_https_when_prevent_ldap_sign_in_is_enabled	
 gitlab	click_user_result_in_command_palette	
 gitlab	1658833247_integrations_class_perform_integrations_action	
 gitlab	add_work_item_comment	
 gitlab	20210915205207_default_click_dropdown	
+gitlab	collect_gemnasium_maven_scan_performance_metrics_from_pipeline	
 gitlab	i_analytics_dev_ops_adoption	
 gitlab	open_display_preferences_dropdown_on_merge_request_homepage	
 gitlab	click_all_gitlab_scoped_search_to_advanced_search	
@@ -3354,6 +3376,7 @@ gitlab	202109151015_projects__registry__repositories_controller_delete_repositor
 gitlab	1674843937_Ci__Build_create_id_tokens	
 gitlab	download_package_asset	
 gitlab	202109151015_cluster_services_prometheus_enabled_manual_prometheus	
+gitlab	copy_ssh_clone_url	
 gitlab	view_admin_credentials_pageload	
 gitlab	20230228151130_invite_members_modal_render	
 gitlab	updated_labels	
@@ -3380,6 +3403,7 @@ gitlab	20210915205108_default_type_search_query
 gitlab	1662373254_Projects__GoogleCloud__DatabasesController_error_create_cloudsql_instance	
 gitlab	authorize_job_token_with_disabled_scope	
 gitlab	unprotect_branch	
+gitlab	click_new_file	
 gitlab	202109151015_api__project_container_repositories_delete_repository	
 gitlab	sort_by_frequency	
 gitlab	20210915205110_default_invite_members_banner_dismissed	
@@ -3406,6 +3430,7 @@ gitlab	click_print_as_pdf_in_wiki_page
 gitlab	user_clicks_comment_filter_dropdown	
 gitlab	pypi_request_forward	
 gitlab	toggle_incident_comments_into_timeline_view	
+gitlab	copy_https_clone_url	
 gitlab	work_item_drawer_disabled	
 gitlab	render_flyout	
 gitlab	20210915205041_default_generic	
@@ -6029,6 +6054,7 @@ gitlab	20210204124936_pages_version
 gitlab	20210204124938_recording_ce_finished_at	
 gitlab	20210216183237_version	
 gitlab	20230926091801_db_enabled	
+gitlab	delete	
 gitlab	create	
 gitlab	read	
 gitlab	k8s_dashboard	
@@ -6195,7 +6221,6 @@ gitlab	work_items_group_issues_list
 gitlab	importer_user_mapping_allow_bypass_of_confirmation	
 gitlab	rapid_diffs_on_compare_show	
 gitlab	work_items_project_issues_list	
-gitlab	validate_label_link_parent_presence_on_import	
 gitlab	github_user_mapping	
 gitlab	incremental_cache_for_refs	
 gitlab	new_default_for_auto_stop	
@@ -6214,7 +6239,6 @@ gitlab	dpop_authentication
 gitlab	webauthn_authentication_vue	
 gitlab	required_pipelines	
 gitlab	ci_job_token_jwt	
-gitlab	populate_and_use_build_names_table	
 gitlab	api_admin_token_revoke	
 gitlab	no_webhook_rate_limit	
 gitlab	admin_groups_vue	
@@ -6239,7 +6263,6 @@ gitlab	post_receive_sync_refresh_cache
 gitlab	directory_code_dropdown_updates	
 gitlab	mirroring_lfs_optimization	
 gitlab	custom_prefix_for_all_token_types	
-gitlab	fe_search_build_by_name	
 gitlab	destroy_fork_network_on_archive	
 gitlab	import_vulnerabilities	
 gitlab	edit_branch_rules	
@@ -6293,7 +6316,6 @@ gitlab	use_primary_and_secondary_stores_for_trace_chunks
 gitlab	manage_pat_by_group_owners_ready	
 gitlab	sidekiq_concurrency_limit_middleware_v2	
 gitlab	authorize_granular_pats	
-gitlab	allow_runner_job_acknowledgement	
 gitlab	glql_es_integration	
 gitlab	project_authorizations_update_in_background_in_transfer_service	
 gitlab	import_by_url_new_page	
@@ -6305,13 +6327,13 @@ gitlab	ci_job_created_subscription
 gitlab	restrict_namespace_api_billing_fields	
 gitlab	reassignment_throttling_table_check	
 gitlab	use_max_concurrency_limit_percentage_as_default_limit	
-gitlab	routable_cluster_agent_token	
 gitlab	merge_request_title_regex	
 gitlab	log_large_json_objects	
 gitlab	disable_message_attribute_on_mr_diff_commits	
 gitlab	user_namespace_allowed_visibility	
 gitlab	commit_files_target_sha	
 gitlab	use_primary_store_as_default_for_trace_chunks	
+gitlab	log_find_with_user_password	
 gitlab	optimized_commit_storage	
 gitlab	omniauth_step_up_auth_for_namespace	
 gitlab	commit_time_tracking	
@@ -6324,6 +6346,7 @@ gitlab	slsa_provenance_statement
 gitlab	replicate_deletion_schedule_operations	
 gitlab	ignore_supported_cwe_list_check	
 gitlab	generic_package_registry_ssrf_protection	
+gitlab	duo_side_rail	
 gitlab	omniauth_step_up_auth_for_admin_mode	
 gitlab	early_access_program_toggle	
 gitlab	resolve_pipeline_schedule_race_conditions	
@@ -6415,7 +6438,6 @@ gitlab	ci_pipeline_archived_access
 gitlab	export_reduce_relation_batch_size	
 gitlab	ci_unsafe_regexp_logger	
 gitlab	web_hook_test_api_endpoint_rate_limit	
-gitlab	suggested_reviewers_internal_api	
 gitlab	show_gitlab_agent_feedback	
 gitlab	split_log_bulk_increment_counter	
 gitlab	ci_trace_log_invalid_chunks	
@@ -6987,6 +7009,7 @@ gitlab	authenticated_with_password
 gitlab	self_hosted_model_feature_changed	
 gitlab	ml_model_version_destroyed	
 gitlab	api_groups	
+gitlab	ReferenceQuotationRemoval	
 gitlab	cloudwatch	
 gitlab	Badges-Offerings	
 gitlab	InternalLinkExtension	
@@ -7875,6 +7898,7 @@ gitlab	approval_project_rules_protected_branches
 gitlab	organization_details	
 gitlab	user_project_callouts	
 gitlab	ci_freeze_periods	
+gitlab	backup_vulnerability_reads	
 gitlab	badges	
 gitlab	abuse_report_label_links	
 gitlab	ci_pipeline_chat_data	
