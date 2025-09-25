@@ -1632,7 +1632,6 @@ gitlab	custom_ability_admin_security_testing
 gitlab	ai_duo_agent_fix_pipeline_button	
 gitlab	use_web_based_commit_signing_enabled	
 gitlab	advanced_vulnerability_management	
-gitlab	enable_project_compliance_violations	
 gitlab	instance_level_model_selection	
 gitlab	prevent_blocking_non_deployment_jobs	
 gitlab	scheduled_pipeline_execution_policies	
@@ -1671,14 +1670,12 @@ gitlab	show_private_groups_as_approvers
 gitlab	use_secret_detection_service	
 gitlab	security_policy_bot_cleanup_cron_worker	
 gitlab	duo_include_context_merge_request	
-gitlab	duo_enterprise_trial_single_form	
 gitlab	search_notes_use_membership_filter	
 gitlab	read_admin_groups	
 gitlab	duo_agent_platform_widget_gitlab_com	
 gitlab	audit_events_fix_streaming_filters	
 gitlab	track_user_group_member_roles_accuracy	
 gitlab	use_user_group_member_roles	
-gitlab	disable_ropc_for_new_applications	
 gitlab	vulnerability_partial_scans	
 gitlab	search_work_item_queries_notes	
 gitlab	search_schema_migration_scroll_api	
@@ -1763,7 +1760,6 @@ gitlab	repositories_web_based_commit_signing
 gitlab	targeted_messages	
 gitlab	experimentation	
 gitlab	deduplicate_ci_tags	
-gitlab	search_indexing_status	
 gitlab	ai_vertex_embeddings	
 gitlab	code_suggestions_x_ray	
 gitlab	security_scans_api	
@@ -1858,6 +1854,7 @@ gitlab	user_disable_two_factor
 gitlab	project_feature_snippets_access_level_updated	
 gitlab	project_access_token_deleted	
 gitlab	cluster_agent_token_revoked	
+gitlab	user_enable_two_factor	
 gitlab	user_profile_visiblity_updated	
 gitlab	created_instance_namespace_filter	
 gitlab	compliance_framework_id_updated	
@@ -2497,6 +2494,7 @@ gitlab	no_find_in_workers
 gitlab	no_helpers_in_presenters	
 gitlab	hard_delete_calls	
 gitlab	feature_flag_key_dynamic	
+gitlab	policy_condition_scope	
 gitlab	strong_memoize_attr	
 gitlab	namespaced_class	
 gitlab	no_code_coverage_comment	
@@ -6327,6 +6325,7 @@ gitlab	ci_job_created_subscription
 gitlab	restrict_namespace_api_billing_fields	
 gitlab	reassignment_throttling_table_check	
 gitlab	use_max_concurrency_limit_percentage_as_default_limit	
+gitlab	delete_expired_trigger_tokens	
 gitlab	merge_request_title_regex	
 gitlab	log_large_json_objects	
 gitlab	disable_message_attribute_on_mr_diff_commits	
@@ -6980,6 +6979,7 @@ gitlab	authenticated_with_webauthn
 gitlab	project_feature_model_registry_access_level_updated	
 gitlab	selective_code_owner_removals_updated	
 gitlab	self_hosted_model_updated	
+gitlab	security_policy_merge_request_bypass	
 gitlab	webhook_destroyed	
 gitlab	direct_transfer_relation_export_downloaded	
 gitlab	ml_model_destroyed	
@@ -7097,7 +7097,6 @@ gitlab	chat_names
 gitlab	wiki_page_slugs	
 gitlab	oauth_access_token_archived_records	
 gitlab	audit_events_instance_amazon_s3_configurations	
-gitlab	work_item_hierarchy_restrictions	
 gitlab	project_secrets_managers	
 gitlab	cluster_enabled_grants	
 gitlab	issuable_metric_image_uploads	
@@ -7658,6 +7657,7 @@ gitlab	group_ssh_certificates
 gitlab	requirements_management_test_reports	
 gitlab	subscription_add_ons	
 gitlab	plans	
+gitlab	packages_cargo_metadata	
 gitlab	security_categories	
 gitlab	alert_management_alert_user_mentions	
 gitlab	users_star_projects	
@@ -8510,6 +8510,7 @@ gitlab	backfill_merge_request_predictions_project_id
 gitlab	backfill_members_request_accepted_at	
 gitlab	backfill_reserved_storage_bytes	
 gitlab	backfill_issue_emails_namespace_id	
+gitlab	work_item_hierarchy_restrictions	
 gitlab	analytics_repository_file_edits	
 gitlab	user_canonical_emails	
 gitlab	in_product_marketing_emails	
