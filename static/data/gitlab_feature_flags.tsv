@@ -338,6 +338,7 @@ gitlab	application_setting_terms
 gitlab	scan_execution_policy_rules	
 gitlab	project_alerting_settings	
 gitlab	backup_vulnerability_severity_overrides	
+gitlab	user_project_member_roles	
 gitlab	ai_active_context_collections	
 gitlab	group_saved_replies	
 gitlab	virtual_registries_container_registry_upstreams	
@@ -2353,6 +2354,7 @@ gitlab	count_distinct_user_id_from_view_runner_fleet_dashboard_pageload_on_group
 gitlab	g_metrics_comparison_page	
 gitlab	count_total_execute_job_pipeline_execution_policy	
 gitlab	count_total_visit_authentication_credentials_inventory	
+gitlab	count_distinct_namespace_id_from_attach_work_item_type_to_custom_lifecycle	
 gitlab	count_distinct_project_id_from_license_scanning_scan	
 gitlab	count_distinct_project_id_from_include_repository_xray_data_into_code_generation_prompt	
 gitlab	count_total_pull_maven_package_file_through_virtual_registry_from_cache	
@@ -2551,6 +2553,7 @@ gitlab	count_distinct_namespace_id_from_scan_execution_policy_triggered_for_targ
 gitlab	count_total_enforce_approval_policies_with_package_exceptions_in_project	
 gitlab	users_visiting_compliance_pages	
 gitlab	count_distinct_project_id_from_enforce_pipeline_execution_policy_in_project	
+gitlab	count_total_attach_work_item_type_to_custom_lifecycle	
 gitlab	20221114065635_set_runner_associated_projects	
 gitlab	count_total_code_suggestions_direct_access_rate_limit_exceeded	
 gitlab	20210216175206_merged_merge_requests_using_approval_rules	
@@ -3123,6 +3126,7 @@ gitlab	render_duo_core_banner
 gitlab	click_documentation_link_duo_enterprise_trial_active	
 gitlab	react_thumbs_down_on_duo_code_review_comment	
 gitlab	create_custom_status_in_group_settings	
+gitlab	attach_work_item_type_to_custom_lifecycle	
 gitlab	file_validation	
 gitlab	20210915205218_default_click_button	
 gitlab	code_suggestions_connection_details_rate_limit_exceeded	
@@ -3323,7 +3327,6 @@ gitlab	duo_include_context_dependency
 gitlab	track_user_group_member_roles_accuracy	
 gitlab	pipeline_security_ai_vr	
 gitlab	search_work_item_queries_notes	
-gitlab	disable_ropc_for_all_applications	
 gitlab	duo_pro_trial_single_form	
 gitlab	active_context_code_index_project	
 gitlab	search_notes_use_membership_filter	
@@ -3359,6 +3362,7 @@ gitlab	work_items_list_es_integration
 gitlab	duo_workflow_cloud_connector_url	
 gitlab	use_user_group_member_roles	
 gitlab	ingest_sec_reports_when_sec_jobs_completed	
+gitlab	check_inherited_groups_for_codeowners	
 gitlab	vulnerability_archival	
 gitlab	duo_workflow_in_ci	
 gitlab	related_epic_links_from_work_items	
@@ -3499,6 +3503,7 @@ gitlab	security_policies_bypass_options_group_roles
 gitlab	ai_catalog_enforce_readonly_versions	
 gitlab	secrets_manager	
 gitlab	work_item_status_mvc2	
+gitlab	ai_catalog_show_page	
 gitlab	vsa_stage_time_scatter_chart	
 gitlab	consolidate_mr_analytics_in_shared_dashboards	
 gitlab	bso_minimal_access_fallback	
@@ -3519,6 +3524,7 @@ gitlab	dap_side_panel
 gitlab	mr_description_composer	
 gitlab	dependencies_page_filter_by_package_manager	
 gitlab	project_dependencies_graphql	
+gitlab	duo_ui_next	
 gitlab	zoekt_traversal_id_queries	
 gitlab	group_security_dashboard_new	
 gitlab	fetch_contributions_data_from_new_tables	
@@ -3551,7 +3557,6 @@ gitlab	use_cached_rolled_up_weights
 gitlab	global_ai_catalog	
 gitlab	default_pinned_nav_items	
 gitlab	code_snippet_search_graphqlapi	
-gitlab	hotspot_duo_chat_during_trial	
 gitlab	allow_with_code_embeddings_indexed_projects_filter	
 gitlab	user_billing_pricing_information	
 gitlab	lightweight_trial_registration_redesign	
@@ -8345,6 +8350,7 @@ gitlab	optimized_commit_storage
 gitlab	log_find_with_user_password	
 gitlab	rename_post_receive_worker	
 gitlab	validity_check_es_filter	
+gitlab	enforce_runners_request_limit	
 gitlab	glql_es_integration	
 gitlab	snowplow_sync_emitter	
 gitlab	dependency_proxy_for_containers_ssrf_protection	
@@ -8393,6 +8399,7 @@ gitlab	authorize_issue_types_in_finder
 gitlab	organization_scoped_paths	
 gitlab	manage_pat_by_group_owners_ready	
 gitlab	truncate_build_names	
+gitlab	packages_composer_read_from_detached_table	
 gitlab	container_registry_protected_containers_delete	
 gitlab	use_primary_store_as_default_for_trace_chunks	
 gitlab	sidekiq_throttling_middleware	
@@ -9349,7 +9356,6 @@ gitlab	public_send
 gitlab	numblock_handler	
 gitlab	node_destructuring	
 gitlab	cop_description_with_example	
-gitlab	location_expression	
 gitlab	useless_message_assertion	
 gitlab	use_restrict_on_send	
 gitlab	node_type_multiple_predicates	
