@@ -15,14 +15,18 @@ mkdir -p "$(dirname "$OUTPUT_CSV")"
 
 # clone or pull
 if [ ! -d "$CLONE_DIR/.git" ]; then
-  git clone "$REPO_URL" "$CLONE_DIR"
+  # Clone the repo into a temporary directory
+  tmpdir=$(mktemp -d)
+  git clone --depth 1 "$REPO_URL" "$tmpdir"
+  cd "$tmpdir"
 else
   git -C "$CLONE_DIR" pull
+  cd "$CLONE_DIR"
 fi
 
 # extract full patch log for kube_features.go
 LOGFILE=$(mktemp)
-git -C "$CLONE_DIR" log -p --date=short \
+git log -p --date=short \
   -G 'featuregate\.Feature|utilfeature\.Feature' -- pkg/features/kube_features.go \
   > "$LOGFILE"
 
@@ -47,4 +51,6 @@ while IFS= read -r line; do
 done < "$LOGFILE"
 
 rm "$LOGFILE"
+cd -
+rm -rf "$tmpdir"
 echo "Extracted feature gates to $OUTPUT_CSV"
