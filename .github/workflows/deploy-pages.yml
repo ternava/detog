@@ -18,6 +18,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: false
+          fetch-depth: 0
 
       - name: Clone Kubernetes repository
         run: git clone https://github.com/kubernetes/kubernetes.git code/kubernetes
@@ -30,6 +31,11 @@ jobs:
           chmod +x tools/clone-extract-feature-gates.sh
           ./tools/clone-extract-feature-gates.sh https://github.com/kubernetes/kubernetes.git \
             > static/data/feature_gates_events.csv
+
+      - name: Sync with remote main
+        run: |
+          git fetch origin main
+          git rebase origin/main
 
       - name: Commit & Push CSV
         run: |
@@ -47,6 +53,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: false
+          fetch-depth: 0
 
       - name: Install Zola
         run: |
