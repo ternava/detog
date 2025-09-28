@@ -26,7 +26,7 @@ jobs:
       - name: Extract feature-gate events CSV
         run: |
           chmod +x tools/clone-extract-feature-gates.sh
-          tools/clone-extract-feature-gates.sh https://github.com/kubernetes/kubernetes.git \
+          ./tools/clone-extract-feature-gates.sh https://github.com/kubernetes/kubernetes.git \
             > static/data/feature_gates_events.csv
 
       - name: Commit & Push CSV
