@@ -35,6 +35,8 @@ function draw() {
   vegaEmbed('#vis', spec, {actions:false});
 }
 
-setInterval(draw, 60000);
+// setInterval(draw, 60000); - this is every minute
+// refresh data every 6 hours (6h = 6*60*60*1000ms)
+setInterval(draw, 1000 * 60 * 60 * 6);
 draw();
 </script>

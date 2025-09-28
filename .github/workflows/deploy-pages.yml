@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          submodules: false
 
       - name: Clone Kubernetes repository
         run: git clone https://github.com/kubernetes/kubernetes.git code/kubernetes
@@ -43,6 +45,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          submodules: false
 
       - name: Install Zola
         run: |
@@ -56,7 +60,7 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: public
 
