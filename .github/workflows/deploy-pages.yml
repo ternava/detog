@@ -44,6 +44,11 @@ jobs:
           git add static/data/feature_gates_events.csv
           git commit -m "Automated update of feature gate events" || echo "No changes"
           git push
+      - name: Upload CSV artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: feature-gates-events
+          path: static/data/feature_gates_events.csv
 
   build-and-deploy:
     needs: update-data
