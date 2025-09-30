@@ -1,7 +1,9 @@
 +++
-title    = "Toggle Chart Guide"
+title = "Feature-Gate Chart"
 template = "page.html"
 +++
+
+<!-- …your existing chart markup from toggles-chart.md… -->
 
 # Toggle Chart Guide
 

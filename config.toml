@@ -17,7 +17,7 @@ title = "deTOG: Feature Toggle Removal Hub"
 # description = "Research, tools, and resources for removing feature toggles"
 author = "Xhevahire Tërnava"
 
-[[menu.main]]
-name = "Feature-Gate Chart"
-url  = "/toggles-chart/"
-weight = 10
+# [[menu.main]]
+# name = "Feature-Gate Chart"
+# url  = "/toggles-chart/"
+# weight = 10
