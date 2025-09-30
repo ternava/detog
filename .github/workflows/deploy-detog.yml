@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Zola on GitHub Pages
 
 on:
   push:
@@ -10,32 +10,14 @@ permissions:
   id-token: write
 
 jobs:
-  build-and-deploy:
+  build:
+    name: Publish site
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+      - name: Checkout main
+        uses: actions/checkout@v4
 
-      - name: Install Zola
-        run: |
-          sudo apt-get update && sudo apt-get install -y jq
-          ZOLA_VERSION=$(curl -s https://api.github.com/repos/getzola/zola/releases/latest | jq -r '.tag_name')
-          wget -qO- "https://github.com/getzola/zola/releases/download/${ZOLA_VERSION}/zola-${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" \
-            | sudo tar -xz -C /usr/local/bin
-          sudo chmod +x /usr/local/bin/zola
-
-      - name: Build site
-        run: zola build
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: public
-
-      - name: Deploy to Pages
-        uses: actions/deploy-pages@v3
+      - name: Build and deploy
+        uses: shalzz/zola-deploy-action@v0.21.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
