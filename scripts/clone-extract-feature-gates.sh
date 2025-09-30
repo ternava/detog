@@ -13,16 +13,13 @@ OUTPUT_CSV=${3:-"$BASE_DIR/static/data/feature_gates_events.csv"}
 # ensure target dir exists
 mkdir -p "$(dirname "$OUTPUT_CSV")"
 
-# clone or pull
+# clone or pull directly into CLONE_DIR
 if [ ! -d "$CLONE_DIR/.git" ]; then
-  # Clone the repo into a temporary directory
-  tmpdir=$(mktemp -d)
-  git clone --depth 1 "$REPO_URL" "$tmpdir"
-  cd "$tmpdir"
-else
-  git -C "$CLONE_DIR" pull
-  cd "$CLONE_DIR"
+  mkdir -p "$(dirname "$CLONE_DIR")"
+  git clone --depth 1 "$REPO_URL" "$CLONE_DIR"
 fi
+git -C "$CLONE_DIR" pull --ff-only || true
+cd "$CLONE_DIR"
 
 # extract full patch log for kube_features.go
 LOGFILE=$(mktemp)
@@ -51,6 +48,9 @@ while IFS= read -r line; do
 done < "$LOGFILE"
 
 rm "$LOGFILE"
+cd "$BASE_DIR"
+
+echo "Extracted feature gates to $OUTPUT_CSV"
 cd -
 rm -rf "$tmpdir"
 echo "Extracted feature gates to $OUTPUT_CSV"
