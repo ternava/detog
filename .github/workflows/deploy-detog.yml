@@ -1,53 +1,38 @@
-name: Update Feature Toggles Data
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
 permissions:
   contents: write
 
-on:
-  schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
-
 jobs:
-  extract:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout detog
+      - name: Checkout repo
         uses: actions/checkout@v3
-      - name: Clone Kubernetes repository
-        run: |
-          git clone --depth 1 https://github.com/kubernetes/kubernetes.git code/kubernetes
-          git -C code/kubernetes fetch --tags
-      - name: Clone GitLab repository
-        run: |
-          git clone --depth 1 https://gitlab.com/gitlab-org/gitlab.git code/gitlab
-      - name: Setup Python
-        uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
-      - name: Install dependencies
+          submodules: false
+          fetch-depth: 0
+
+      - name: Install Zola
         run: |
-          pip install click
-      - name: Ensure data directory exists
-        run: mkdir -p static/data
-      - name: Debug workspace contents
-        run: |
-          echo "Workspace path: $GITHUB_WORKSPACE"
-          ls -R $GITHUB_WORKSPACE
-      - name: Extract Kubernetes feature gates
-        run: |
-          python $GITHUB_WORKSPACE/tools/extract-toggles.py kubernetes code/kubernetes \
-            > static/data/k8s_feature_toggles.tsv
-      - name: Extract GitLab feature flags
-        run: |
-          python $GITHUB_WORKSPACE/tools/extract-toggles.py gitlab code/gitlab \
-            > static/data/gitlab_feature_flags.tsv
-      - name: Extract Kubernetes toggles by release
-        run: |
-          python tools/extract-k8s-releases.py code/kubernetes > static/data/k8s_releases.tsv
-      - name: Commit and push data
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@users.noreply.github.com
-          git add static/data/*.tsv
-          git commit -m "Automated update of feature toggles data" || echo "No changes"
-          git push
+          wget -qO- https://github.com/getzola/zola/releases/latest/download/zola-x86_64-unknown-linux-gnu.tar.gz \
+            | tar -xzf - -C /usr/local/bin
+
+      - name: Build site
+        run: zola build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: public
+
+      - name: Deploy to Pages
+        uses: actions/deploy-pages@v1
