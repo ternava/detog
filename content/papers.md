@@ -27,3 +27,7 @@ title = "Research Papers"
 # Toggle Chart Guide
 
 This page shows an interactive chart of feature-gate toggles (added vs removed) over time. The chart fetches data every minute from the CSV.
+
+## Documentation & Removal Guides
+- **Feature Toggles (aka Feature Flags)** - Pete Hodgson (2017)  
+  [martinfowler.com](https://martinfowler.com/articles/feature-toggles.html) | Essential reading on toggle lifecycle

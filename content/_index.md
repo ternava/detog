@@ -60,12 +60,12 @@ const spec = {
        }
      },
      "tooltip": [
-      {"field":"date","type":"temporal","title":"Date"},
-      {"field":"count","type":"quantitative","title":"Count"},
-      {"field":"event","type":"nominal","title":"Event"}
-    ]
-  }
-};
+       {"field":"date","type":"temporal","title":"Date"},
+       {"field":"count","type":"quantitative","title":"Count"},
+       {"field":"event","type":"nominal","title":"Event"}
+     ]
+    }
+  };
 
 function draw() {
   vegaEmbed('#vis', spec, {actions:false});
@@ -73,4 +73,60 @@ function draw() {
 
 setInterval(draw, 1000 * 60 * 60 * 6);
 draw();
+</script>
+
+## Interactive Toggle List
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+
+<table id="toggle-table" class="display" style="width:100%">
+  <thead>
+    <tr>
+      <th>Feature Toggle</th>
+      <th>Event</th>
+      <th>Date</th>
+      <th>SHA</th>
+      <th>Line</th>
+    </tr>
+  </thead>
+</table>
+
+<script>
+fetch("data/feature_gates_events.csv")
+  .then(r => r.text())
+  .then(text => {
+    const rows = Papa.parse(text, { header: true }).data;
+    const summary = {};
+    rows.forEach(r => {
+      const f = r.feature;
+      summary[f] = summary[f] || { feature: f, created: null, removed: null };
+      if (r.event === "added") {
+        if (!summary[f].created || r.date < summary[f].created) summary[f].created = r.date;
+      }
+      if (r.event === "removed") {
+        if (!summary[f].removed || r.date > summary[f].removed) summary[f].removed = r.date;
+      }
+    });
+    const data = Object.values(summary).map(o => {
+      const lifetime = o.created && o.removed
+        ? Math.round((new Date(o.removed) - new Date(o.created)) / (1000 * 60 * 60 * 24))
+        : "";
+      return [o.feature, o.removed ? "removed" : "active", o.created, o.removed || "", lifetime];
+    });
+    $("#toggle-table").DataTable({
+      data,
+      columns: [
+        { title: "Feature Toggle" },
+        { title: "Event" },
+        { title: "Date" },
+        { title: "SHA" },
+        { title: "Line" }
+      ],
+      order: [[2, "desc"]],
+      pageLength: 25
+    });
+  });
 </script>
