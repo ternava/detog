@@ -14,7 +14,7 @@ Feature toggles are powerful for deployment and experimentation, but they can ac
 
 ## Visualizations
 
-- [Feature Toggle Trends](/toggles-chart/)
+- [Feature Toggle Trends](toggles-chart/)
 
 ## Contributing
 
