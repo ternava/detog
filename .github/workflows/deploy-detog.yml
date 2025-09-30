@@ -19,19 +19,20 @@ jobs:
 
       - name: Install Zola
         run: |
-          wget -qO- -L https://github.com/getzola/zola/releases/latest/download/zola-x86_64-unknown-linux-gnu.tar.gz \
-            | tar -xzf - -C /usr/local/bin
+          curl -sL https://github.com/getzola/zola/releases/latest/download/zola-x86_64-unknown-linux-gnu.tar.gz \
+            -o zola.tar.gz
+          sudo tar --strip-components=1 -C /usr/local/bin -xzf zola.tar.gz
 
       - name: Build site
         run: zola build
 
       - name: Configure Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: public
 
       - name: Deploy to Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v3
