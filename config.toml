@@ -17,23 +17,14 @@ title = "deTOG: Feature Toggle Removal Hub"
 # description = "Research, tools, and resources for removing feature toggles"
 author = "Xhevahire Tërnava"
 
-# Main navigation menu
-[[menu.main]]
-name = "Home"
-url  = "/"
-weight = 0
+default_language = "en"
 
-[[menu.main]]
-name = "Papers"
-url  = "/papers/"
-weight = 10
-
-[[menu.main]]
-name = "Resources"
-url  = "/resources/"
-weight = 20
-
-[[menu.main]]
-name = "Tools"
-url  = "/tools/"
-weight = 30
+[languages]
+[languages.en]
+# ...existing language-specific settings...
+menu = [
+  { name = "Home",      url = "/",          weight = 0  },
+  { name = "Papers",    url = "/papers/",   weight = 10 },
+  { name = "Resources", url = "/resources/",weight = 20 },
+  { name = "Tools",     url = "/tools/",    weight = 30 },
+]
