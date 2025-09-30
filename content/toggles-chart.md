@@ -1,5 +1,6 @@
 +++
-title = "Toggle Chart Guide"
+title    = "Toggle Chart Guide"
+template = "page.html"
 +++
 
 # Toggle Chart Guide
