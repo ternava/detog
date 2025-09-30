@@ -1073,4 +1073,3 @@ a6b2ebb50cc33ae4bc7624047e560ea99a665004,2017-01-20,added,AppArmor,"+	AppArmor u
 a6b2ebb50cc33ae4bc7624047e560ea99a665004,2017-01-20,added,AllowExtTrafficLocalEndpoints,"+	ExternalTrafficLocalOnly utilfeature.Feature = "AllowExtTrafficLocalEndpoints""
 a6b2ebb50cc33ae4bc7624047e560ea99a665004,2017-01-20,added,DynamicVolumeProvisioning,"+	DynamicVolumeProvisioning utilfeature.Feature = "DynamicVolumeProvisioning""
 a6b2ebb50cc33ae4bc7624047e560ea99a665004,2017-01-20,added,DynamicKubeletConfig,"+	DynamicKubeletConfig utilfeature.Feature = "DynamicKubeletConfig""
-a6b2ebb50cc33ae4bc7624047e560ea99a665004,2017-01-20,added,ExperimentalHostUserNamespaceDefaulting,"+	ExperimentalHostUserNamespaceDefaultingGate utilfeature.Feature = "ExperimentalHostUserNamespaceDefaulting""
