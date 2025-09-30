@@ -14,7 +14,7 @@ Feature toggles are powerful for deployment and experimentation, but they can ac
 - Updated: ...
 -->
 
-## Added and removed feature toggles in Kubernetes and GitLab
+## The count of added and removed feature toggles in software projects
 <div id="vis"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -30,13 +30,40 @@ const spec = {
   "transform": [
     {"aggregate":[{"op":"count","as":"count"}],"groupby":["date","event"]}
   ],
-  "width":800,
+  "width":650,
   "height":400,
-  "mark":"line",
+  "mark": {
+    "type": "line",
+    "point": true    // show points for tooltip interactivity
+  },
   "encoding": {
-    "x": {"field":"date","type":"temporal","title":"Date"},
-    "y": {"field":"count","type":"quantitative","title":"Number of Toggles"},
-    "color": {"field":"event","type":"nominal","title":"Event"}
+     "x": {
+       "field": "date",
+       "type": "temporal",
+       "title": "Date",
+       "axis": {
+         "format": "%Y",
+         "tickCount": {"interval": "year"}
+       }
+     },
+      "y": {"field":"count","type":"quantitative","title":"Number of Toggles"},
+     "color": {
+       "field": "event",
+       "type": "nominal",
+       "title": "Event",
+       "scale": {
+         "domain": ["removed", "added"],
+         "range": ["red", "blue"]
+       },
+       "legend": {
+         "orient": "top-right"
+       }
+     },
+     "tooltip": [
+      {"field":"date","type":"temporal","title":"Date"},
+      {"field":"count","type":"quantitative","title":"Count"},
+      {"field":"event","type":"nominal","title":"Event"}
+    ]
   }
 };
 
