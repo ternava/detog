@@ -20,9 +20,6 @@ jobs:
           submodules: false
           fetch-depth: 0
 
-      - name: Clone Kubernetes repository
-        run: git clone --depth 1 https://github.com/kubernetes/kubernetes.git /tmp/kubernetes
-
       - name: Ensure data directory exists
         run: mkdir -p static/data
 
@@ -35,9 +32,6 @@ jobs:
         run: |
           chmod +x tools/clone-extract-feature-gates.sh
           ./tools/clone-extract-feature-gates.sh https://github.com/kubernetes/kubernetes.git > static/data/feature_gates_events.csv
-
-      - name: Clean up cloned repo
-        run: rm -rf /tmp/kubernetes
 
       - name: Commit & Push CSV
         run: |
