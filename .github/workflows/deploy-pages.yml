@@ -26,16 +26,16 @@ jobs:
       - name: Ensure data directory exists
         run: mkdir -p static/data
 
+      - name: Sync with remote main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+
       - name: Extract feature-gate events CSV
         run: |
           chmod +x tools/clone-extract-feature-gates.sh
           ./tools/clone-extract-feature-gates.sh https://github.com/kubernetes/kubernetes.git \
             > static/data/feature_gates_events.csv
-
-      - name: Sync with remote main
-        run: |
-          git fetch origin main
-          git rebase origin/main
 
       - name: Commit & Push CSV
         run: |
