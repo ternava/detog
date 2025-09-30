@@ -30,6 +30,14 @@ jobs:
           echo "Preview of CSV:"
           head -n 5 static/data/feature_gates_events.csv || echo "CSV missing or empty"
 
+      - name: Commit & Push generated CSV
+        run: |
+          git config user.name 'github-actions'
+          git config user.email 'github-actions@users.noreply.github.com'
+          git add static/data/feature_gates_events.csv
+          git commit -m 'Automated update of feature gates CSV' || echo 'No changes to commit'
+          git push
+
       - name: Install Zola
         run: |
           sudo apt-get update && sudo apt-get install -y jq wget
