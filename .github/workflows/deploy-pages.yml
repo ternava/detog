@@ -37,6 +37,9 @@ jobs:
           ./tools/clone-extract-feature-gates.sh https://github.com/kubernetes/kubernetes.git \
             > static/data/feature_gates_events.csv
 
+      - name: Clean up cloned repo
+        run: rm -rf code/kubernetes
+
       - name: Commit & Push CSV
         run: |
           git config user.name github-actions
