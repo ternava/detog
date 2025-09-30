@@ -51,6 +51,3 @@ rm "$LOGFILE"
 cd "$BASE_DIR"
 
 echo "Extracted feature gates to $OUTPUT_CSV"
-cd -
-rm -rf "$tmpdir"
-echo "Extracted feature gates to $OUTPUT_CSV"
