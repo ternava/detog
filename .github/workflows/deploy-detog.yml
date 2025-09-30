@@ -26,6 +26,13 @@ jobs:
           chmod +x scripts/clone-extract-feature-gates.sh
           scripts/clone-extract-feature-gates.sh
 
+      - name: Debug clone output
+        run: |
+          echo "Directory tree under code:"
+          ls -R code || echo "No code directory"
+          echo "--- CSV preview ---"
+          head -n 10 static/data/feature_gates_events.csv || echo "CSV not found"
+
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.21.0
         env:
