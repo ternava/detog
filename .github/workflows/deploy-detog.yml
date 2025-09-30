@@ -17,6 +17,9 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Ensure data directory exists
         run: mkdir -p static/data
@@ -26,12 +29,13 @@ jobs:
           chmod +x scripts/clone-extract-feature-gates.sh
           scripts/clone-extract-feature-gates.sh
 
-      - name: Debug clone output
+      - name: Commit & Push updated CSV
         run: |
-          echo "Directory tree under code:"
-          ls -R code || echo "No code directory"
-          echo "--- CSV preview ---"
-          head -n 10 static/data/feature_gates_events.csv || echo "CSV not found"
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add static/data/feature_gates_events.csv
+          git commit -m "Automated update of feature gate events" || echo "No changes"
+          git push
 
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.21.0
