@@ -16,15 +16,3 @@ highlight_code = false
 title = "deTOG: Feature Toggle Removal Hub"
 # description = "Research, tools, and resources for removing feature toggles"
 author = "Xhevahire Tërnava"
-
-default_language = "en"
-
-[languages]
-[languages.en]
-# ...existing language-specific settings...
-menu = [
-  { name = "Home",      url = "/",          weight = 0  },
-  { name = "Papers",    url = "/papers/",   weight = 10 },
-  { name = "Resources", url = "/resources/",weight = 20 },
-  { name = "Tools",     url = "/tools/",    weight = 30 },
-]

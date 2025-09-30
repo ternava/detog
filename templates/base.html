@@ -123,19 +123,28 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1><a href="{{ get_url(path="") }}" style="text-decoration: none; color: inherit;">{{ config.extra.title }}</a></h1>
-        {% if config.extra.description %}
-        <p>{{ config.extra.description }}</p>
-        {% endif %}
-        <nav class="nav">
-            <a href="{{ get_url(path="") }}">Home</a>
-            <a href="{{ get_url(path="papers") }}">Papers</a>
-            <a href="{{ get_url(path="tools") }}">Tools</a>
-            <a href="{{ get_url(path="resources") }}">Resources</a>
-        </nav>
-    </div>
-    
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/papers/">Papers</a>
+        <a href="/resources/">Resources</a>
+        <a href="/tools/">Tools</a>
+      </nav>
+      
+      <div class="header">
+          <h1><a href="{{ get_url(path="") }}" style="text-decoration: none; color: inherit;">{{ config.extra.title }}</a></h1>
+          {% if config.extra.description %}
+          <p>{{ config.extra.description }}</p>
+          {% endif %}
+          <nav class="nav">
+              <a href="{{ get_url(path="") }}">Home</a>
+              <a href="{{ get_url(path="papers") }}">Papers</a>
+              <a href="{{ get_url(path="tools") }}">Tools</a>
+              <a href="{{ get_url(path="resources") }}">Resources</a>
+          </nav>
+      </div>
+    </header>
+
     <main>
         {% block content %}{% endblock content %}
     </main>
