@@ -15,10 +15,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
-          submodules: false
           fetch-depth: 0
+          submodules: false
+          persist-credentials: true
+
+      - name: Remove any leftover submodules config
+        run: rm -f .gitmodules
 
       - name: Ensure data directory exists
         run: mkdir -p static/data
@@ -52,9 +56,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
           submodules: false
+          fetch-depth: 0
+
+      - name: Remove any leftover submodules config
+        run: rm -f .gitmodules
 
       - name: Install Zola
         run: |
