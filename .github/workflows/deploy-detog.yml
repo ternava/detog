@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Clone Kubernetes repository
-        run: git clone --depth 1 https://github.com/kubernetes/kubernetes.git code/kubernetes
+        run: git clone --depth 1 https://github.com/kubernetes/kubernetes.git /tmp/kubernetes
 
       - name: Ensure data directory exists
         run: mkdir -p static/data
@@ -37,7 +37,7 @@ jobs:
           ./tools/clone-extract-feature-gates.sh https://github.com/kubernetes/kubernetes.git > static/data/feature_gates_events.csv
 
       - name: Clean up cloned repo
-        run: rm -rf code/kubernetes
+        run: rm -rf /tmp/kubernetes
 
       - name: Commit & Push CSV
         run: |
@@ -64,11 +64,7 @@ jobs:
 
       - name: Install Zola
         run: |
-          sudo apt update
-          sudo apt install -y software-properties-common
-          sudo add-apt-repository -y ppa:getzola/zola
-          sudo apt update
-          sudo apt install -y zola
+          wget -qO- https://github.com/getzola/zola/releases/latest/download/zola-x86_64-unknown-linux-gnu.tar.gz | tar -xzf - -C /usr/local/bin
 
       - name: Build site
         run: zola build
