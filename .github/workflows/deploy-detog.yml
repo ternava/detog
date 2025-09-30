@@ -41,3 +41,4 @@ jobs:
         uses: shalzz/zola-deploy-action@v0.21.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZOLA_BASE_URL: "https://ternava.github.io/detog/"
