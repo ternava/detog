@@ -17,11 +17,6 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v4
 
-      - name: Remove leftover submodule config
-        run: |
-          rm -f .gitmodules
-          git config --remove-section submodule.code/kubernetes || true
-
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.21.0
         env:
