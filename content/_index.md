@@ -2,17 +2,19 @@
 title = "deTOG - Feature Toggle Removal Hub"
 +++
 
+<!-- 
 A comprehensive collection of resources focused on **removing feature toggles**
 
 Feature toggles are powerful for deployment and experimentation, but they can accumulate over time. This site focuses specifically on state-of-the-art strategies, tools, and research for safely removing unused toggles and preventing toggle-related complexity.
 
-## Recent additions
+ ## Recent additions
 
 - New paper: "[Exploring Influence of Feature Toggles on Code Complexity](https://dl.acm.org/doi/abs/10.1145/3661167.3661190)" (2024)
 - Added: ...
 - Updated: ...
+-->
 
-## Visualizations
+## Added and removed feature toggles in Kubernetes and GitLab
 <div id="vis"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
