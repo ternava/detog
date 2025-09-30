@@ -18,6 +18,14 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v4
 
+      - name: Ensure data directory exists
+        run: mkdir -p static/data
+
+      - name: Extract feature-gate events
+        run: |
+          chmod +x scripts/clone-extract-feature-gates.sh
+          scripts/clone-extract-feature-gates.sh
+
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.21.0
         env:
