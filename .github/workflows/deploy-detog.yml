@@ -23,6 +23,13 @@ jobs:
           chmod +x scripts/clone-extract-feature-gates.sh
           scripts/clone-extract-feature-gates.sh
 
+      - name: Debug CSV contents
+        run: |
+          echo "Contents of static/data directory:"
+          ls -lah static/data
+          echo "Preview of CSV:"
+          head -n 5 static/data/feature_gates_events.csv || echo "CSV missing or empty"
+
       - name: Install Zola
         run: |
           sudo apt-get update && sudo apt-get install -y jq wget
