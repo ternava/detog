@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+413c34f3192b5d56fb7ee28d947dfaa57e69274d,2025-10-09,added,AuthorizePodWebsocketUpgradeCreatePermission,"+	AuthorizePodWebsocketUpgradeCreatePermission featuregate.Feature = "AuthorizePodWebsocketUpgradeCreatePermission""
 96349a460886a47d06305900b7389dbaa36dbac6,2025-09-26,removed,DeclarativeValidation,"-	DeclarativeValidation featuregate.Feature = "DeclarativeValidation""
 96349a460886a47d06305900b7389dbaa36dbac6,2025-09-26,removed,DeclarativeValidationTakeover,"-	DeclarativeValidationTakeover featuregate.Feature = "DeclarativeValidationTakeover""
 7f4ee652eaa0b0782348304ea9fbf7a7f53a19ab,2025-07-28,removed,ProbeHostPodSecurityStandards,"-	ProbeHostPodSecurityStandards featuregate.Feature = "ProbeHostPodSecurityStandards""
