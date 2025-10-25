@@ -1,4 +1,7 @@
 sha,date,event,feature,line
+30a6d4b389a6c6b10c5bd136216b47e55da3f18a,2025-10-13,added,CSIServiceAccountTokenSecrets,"+	CSIServiceAccountTokenSecrets featuregate.Feature = "CSIServiceAccountTokenSecrets""
+715228f4789048e5e0fc9a232dbb89aeadf4cfa5,2025-10-12,removed,LoadBalancerIPMode,"-	LoadBalancerIPMode featuregate.Feature = "LoadBalancerIPMode""
+b5297b18ab2a6a0096e417eda0cfc4261bdb1530,2025-10-12,removed,AllowServiceLBStatusOnNonLB,"-	AllowServiceLBStatusOnNonLB featuregate.Feature = "AllowServiceLBStatusOnNonLB""
 413c34f3192b5d56fb7ee28d947dfaa57e69274d,2025-10-09,added,AuthorizePodWebsocketUpgradeCreatePermission,"+	AuthorizePodWebsocketUpgradeCreatePermission featuregate.Feature = "AuthorizePodWebsocketUpgradeCreatePermission""
 96349a460886a47d06305900b7389dbaa36dbac6,2025-09-26,removed,DeclarativeValidation,"-	DeclarativeValidation featuregate.Feature = "DeclarativeValidation""
 96349a460886a47d06305900b7389dbaa36dbac6,2025-09-26,removed,DeclarativeValidationTakeover,"-	DeclarativeValidationTakeover featuregate.Feature = "DeclarativeValidationTakeover""
