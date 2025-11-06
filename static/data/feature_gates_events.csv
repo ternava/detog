@@ -1,5 +1,9 @@
 sha,date,event,feature,line
+7db53119521a33d9a094c417213c7e104f6b69b2,2025-06-21,added,MutablePodResourcesForSuspendedJobs,"+	MutablePodResourcesForSuspendedJobs featuregate.Feature = "MutablePodResourcesForSuspendedJobs""
+85d7626d2dc4543af07e2fb1a62ef01d45a248e5,2025-03-10,removed,VolumeLimitScaling,"-	VolumeLimitScaling featuregate.Feature = "VolumeLimitScaling""
+85d7626d2dc4543af07e2fb1a62ef01d45a248e5,2025-03-10,added,VolumeLimitScaling,"+	VolumeLimitScaling featuregate.Feature = "VolumeLimitScaling""
 e8bd3f629d435797c586726d3b76fd90d7b5bf08,2025-06-06,removed,UserNamespacesPodSecurityStandards,"-	UserNamespacesPodSecurityStandards featuregate.Feature = "UserNamespacesPodSecurityStandards""
+7bbec73192abfb21b42ba8922d3f704d07424006,2025-10-30,added,VolumeLimitScaling,"+	VolumeLimitScaling featuregate.Feature = "VolumeLimitScaling""
 30a6d4b389a6c6b10c5bd136216b47e55da3f18a,2025-10-13,added,CSIServiceAccountTokenSecrets,"+	CSIServiceAccountTokenSecrets featuregate.Feature = "CSIServiceAccountTokenSecrets""
 715228f4789048e5e0fc9a232dbb89aeadf4cfa5,2025-10-12,removed,LoadBalancerIPMode,"-	LoadBalancerIPMode featuregate.Feature = "LoadBalancerIPMode""
 b5297b18ab2a6a0096e417eda0cfc4261bdb1530,2025-10-12,removed,AllowServiceLBStatusOnNonLB,"-	AllowServiceLBStatusOnNonLB featuregate.Feature = "AllowServiceLBStatusOnNonLB""
