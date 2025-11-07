@@ -1,4 +1,12 @@
 sha,date,event,feature,line
+8f2c0a9a60fece7326aa750ca0fa63a0d9287a93,2025-11-05,removed,UnknownVersionInteroperabilityProxy,"-	UnknownVersionInteroperabilityProxy featuregate.Feature = "UnknownVersionInteroperabilityProxy""
+e986000e6a7e601a82067ebab5f3b5950c83ac14,2025-10-26,added,UserNamespacesHostNetworkSupport,"+	UserNamespacesHostNetworkSupport featuregate.Feature = "UserNamespacesHostNetworkSupport""
+b6006528e1eeea6bdf6219d83168e7d770ed947a,2025-10-01,added,GangScheduling,"+	GangScheduling featuregate.Feature = "GangScheduling""
+b6006528e1eeea6bdf6219d83168e7d770ed947a,2025-10-01,added,GenericWorkload,"+	GenericWorkload featuregate.Feature = "GenericWorkload""
+b622363659b8f0ee7368557d7f9e7f73cad96aa6,2025-09-29,added,MutablePVNodeAffinity,"+	MutablePVNodeAffinity featuregate.Feature = "MutablePVNodeAffinity""
+c9327d00b11f50b663e52e32420a71dc1f151b58,2025-09-19,added,NodeDeclaredFeatures,"+	NodeDeclaredFeatures featuregate.Feature = "NodeDeclaredFeatures""
+5a7c90fb7679071d3d4d6708ae56048795791aaa,2025-11-05,added,MutableSchedulingDirectivesForSuspendedJobs,"+	MutableSchedulingDirectivesForSuspendedJobs featuregate.Feature = "MutableSchedulingDirectivesForSuspendedJobs""
+eaee6b6bce0155bce1b7be00e704a23dd2ace54e,2025-11-03,added,DRADeviceTaintRules,"+	DRADeviceTaintRules featuregate.Feature = "DRADeviceTaintRules""
 7db53119521a33d9a094c417213c7e104f6b69b2,2025-06-21,added,MutablePodResourcesForSuspendedJobs,"+	MutablePodResourcesForSuspendedJobs featuregate.Feature = "MutablePodResourcesForSuspendedJobs""
 85d7626d2dc4543af07e2fb1a62ef01d45a248e5,2025-03-10,removed,VolumeLimitScaling,"-	VolumeLimitScaling featuregate.Feature = "VolumeLimitScaling""
 85d7626d2dc4543af07e2fb1a62ef01d45a248e5,2025-03-10,added,VolumeLimitScaling,"+	VolumeLimitScaling featuregate.Feature = "VolumeLimitScaling""
