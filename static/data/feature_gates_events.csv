@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+854e67bb51e177b4b9c012928d8271704e9cb80d,2025-11-13,added,OpportunisticBatching,"+	OpportunisticBatching featuregate.Feature = "OpportunisticBatching""
 6d3013425695862ef8923415cb2540fcab5680f2,2025-10-20,added,InPlacePodLevelResourcesVerticalScaling,"+	InPlacePodLevelResourcesVerticalScaling featuregate.Feature = "InPlacePodLevelResourcesVerticalScaling""
 aceb89debc2632c5c9956c8b7ef591426a485447,2025-11-10,added,TaintTolerationComparisonOperators,"+	TaintTolerationComparisonOperators featuregate.Feature = "TaintTolerationComparisonOperators""
 83c5cd5526fd0dbbaadbd530cabf38e5df578102,2025-09-29,added,RestartAllContainersOnContainerExits,"+	RestartAllContainersOnContainerExits featuregate.Feature = "RestartAllContainersOnContainerExits""
