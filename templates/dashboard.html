@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ get_url(path='css/dashboard.css') }}">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+<h1>{{ page.title }}</h1>
+<p>{{ page.content | safe }}</p>
+
+<div class="dashboard-grid">
+    <!-- Input Panel -->
+    <div class="input-panel">
+        <div class="card">
+            <div class="alert alert-info">Your project metrics.</div>
+            <div class="form-group"><label for="projectName">project name</label><input type="text" id="projectName" placeholder="my project"></div>
+            <div class="form-group"><label for="activeToggles">active feature toggles</label><input type="number" id="activeToggles" placeholder="current number of toggles (e.g., 50)" min="0"></div>
+            <div class="form-group"><label for="additions">total toggles added</label><input type="number" id="additions" placeholder="over the analysis period (e.g., 200)" min="0"></div>
+            <div class="form-group"><label for="removals">total toggles removed</label><input type="number" id="removals" placeholder="over the analysis period (e.g., 150)" min="0"></div>
+            <div class="form-group"><label for="linesOfCode">lines of code (LoC)</label><input type="number" id="linesOfCode" placeholder="total codebase size (e.g., 500000)" min="0"></div>
+            <div class="form-group"><label for="analysisPeriod">analysis period (months)</label><input type="number" id="analysisPeriod" placeholder="duration of analysis (e.g., 36)" min="1"></div>
+            <div class="form-group"><label for="medianLifespan">median toggle lifespan (days)</label><input type="number" id="medianLifespan" placeholder="median duration before removal (e.g., 180)" min="0"></div>
+            <div class="form-group"><label for="releaseCycle">average release cycle (days)</label><input type="number" id="releaseCycle" placeholder="time between releases (e.g., 30)" min="1"></div>
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="calculateMetrics()">Calculate</button>
+                <button class="btn btn-secondary" onclick="clearForm()">Clear</button>
+                <button class="btn btn-success" onclick="saveProject()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Visualization Panel -->
+    <div class="visualization-panel">
+        <div class="card">
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('comparison')">benchmark comparison</button>
+                <button class="tab" onclick="switchTab('thresholds')">threshold reference</button>
+                <button class="tab" onclick="switchTab('community')">saved projects</button>
+            </div>
+
+            <div id="comparison" class="tab-content active">
+                <div class="alert alert-info">Overall comparison.</div>
+                <div class="radar-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+                
+                <div class="legend">
+                    <div class="legend-item"><div class="legend-diamond"></div><span>Kubernetes</span></div>
+                    <div class="legend-item"><div class="legend-square"></div><span>GitLab</span></div>
+                    <div class="legend-item"><div class="legend-circle"></div><span id="userProjectLabel">Your Project</span></div>
+                </div>
+                
+                <div class="alert alert-info">Calculated metrics.</div>
+                <div id="metricsResults"><p style="color: #666; font-style: italic;">enter project data and click Calculate.</p></div>
+            </div>
+
+            <div id="thresholds" class="tab-content">
+                <div class="alert alert-info">Thresholds derived from Kubernetes and GitLab.</div>
+                <table class="baseline-table">
+                    <thead><tr><th>metric</th><th>low</th><th>moderate</th><th>high</th></tr></thead>
+                    <tbody>
+                        <tr><td>C</td><td><span class="zone-badge low">&lt; 15</span><br><small>Deliberate</small></td><td><span class="zone-badge moderate">15-100</span><br><small>Balanced</small></td><td><span class="zone-badge high">≥ 100</span><br><small>Rapid</small></td></tr>
+                        <tr><td>N</td><td><span class="zone-badge low">&lt; 2</span><br><small>Sustainable</small></td><td><span class="zone-badge moderate">2-5</span><br><small>Warning</small></td><td><span class="zone-badge high">≥ 5</span><br><small>Critical</small></td></tr>
+                        <tr><td>R</td><td><span class="zone-badge low">≥ 0.85</span><br><small>Healthy</small></td><td><span class="zone-badge moderate">0.70-0.85</span><br><small>Warning</small></td><td><span class="zone-badge high">&lt; 0.70</span><br><small>Debt</small></td></tr>
+                        <tr><td>D</td><td><span class="zone-badge low">&lt; 0.02</span><br><small>Low</small></td><td><span class="zone-badge moderate">0.02-0.10</span><br><small>Typical</small></td><td><span class="zone-badge high">≥ 0.10</span><br><small>High</small></td></tr>
+                        <tr><td>S</td><td><span class="zone-badge low">&lt; 3</span><br><small>Short</small></td><td><span class="zone-badge moderate">3-8</span><br><small>Typical</small></td><td><span class="zone-badge high">≥ 8</span><br><small>Long</small></td></tr>
+                    </tbody>
+                </table>
+                <div class="alert alert-info">Baseline values.</div>
+                <table class="baseline-table">
+                    <thead><tr><th>metric</th><th><span class="k8s-color">◆ Kubernetes</span></th><th><span class="gitlab-color">■ GitLab</span></th></tr></thead>
+                    <tbody>
+                        <tr><td>churn rate</td><td>10.2/month</td><td>104.5/month</td></tr>
+                        <tr><td>net accumulation</td><td>1.5/month</td><td>6.5/month</td></tr>
+                        <tr><td>cleanup ratio</td><td>0.74</td><td>0.88</td></tr>
+                        <tr><td>toggle density</td><td>0.016/kLoC</td><td>0.081/kLoC</td></tr>
+                        <tr><td>norm. lifespan</td><td>6.1 cycles</td><td>6.2 cycles</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="community" class="tab-content">
+                <div class="alert alert-info">Saved projects are stored locally in your browser. Export to download as CSV.</div>
+                <div class="community-projects" id="communityList"><p style="color: #666;">No projects saved yet.</p></div>
+                <div style="margin-top: 1rem;">
+                    <button class="btn btn-secondary" onclick="exportData()">Export CSV</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('importFile').click()">Import CSV</button>
+                    <input type="file" id="importFile" style="display: none;" accept=".csv,.json" onchange="handleImport(event)">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ get_url(path='js/dashboard.js') }}"></script>
+{% endblock content %}

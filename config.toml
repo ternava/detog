@@ -13,6 +13,6 @@ highlight_code = false
 
 [extra]
 # Site info
-title = "deTOG: Feature Toggle Removal Hub"
+title = "Feature Toggle Hub"
 # description = "Research, tools, and resources for removing feature toggles"
 author = "Xhevahire Tërnava"

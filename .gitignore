@@ -1,1 +1,17 @@
+# Zola build output
 /code/
+public/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Local storage data (if any test files)
+*.log

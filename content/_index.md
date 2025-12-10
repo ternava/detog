@@ -1,5 +1,5 @@
 +++
-title = "deTOG - Feature Toggle Removal Hub"
+title = "Feature Toggle Hub"
 +++
 
 <!-- 
