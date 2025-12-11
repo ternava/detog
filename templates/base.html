@@ -72,28 +72,60 @@
         }
         
         .header {
-            border-bottom: 1px solid #e1e8ed;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
+            margin-bottom: 0;
+            padding: 1.5rem 2rem;
+            margin-left: -2rem;
+            margin-right: -2rem;
+            margin-top: -2rem;
+            background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 1.6rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .header h1 a {
+            color: white !important;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            color: rgba(255, 255, 255, 0.85);
+            margin: 0.3rem 0 0 0;
+            font-size: 0.9rem;
         }
         
         .nav {
-            margin-top: 1rem;
-            padding-top: 0.8rem;
-            border-top: 1px solid #f0f0f0;
+            margin-top: 0;
+            padding: 0.6rem 0;
+            display: flex;
+            gap: 0.5rem;
+            border-bottom: 1px solid #e1e8ed;
+            background: #f8f9fa;
+            margin-left: -2rem;
+            margin-right: -2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
         }
         
         .nav a {
             display: inline-block;
-            margin-right: 1.5rem;
-            color: #0066cc;
+            padding: 0.4rem 1rem;
+            color: #2c3e50;
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 500;
+            border-radius: 6px;
+            transition: background 0.2s, color 0.2s;
         }
         
         .nav a:hover {
-            text-decoration: underline;
+            background: #e9ecef;
+            color: #3498db;
+            text-decoration: none;
         }
         
         .footer {
@@ -129,14 +161,11 @@
           {% if config.extra.description %}
           <p>{{ config.extra.description }}</p>
           {% endif %}
-          <nav class="nav">
-              <a href="{{ get_url(path="") }}">Home</a>
-              <a href="{{ get_url(path='dashboard') }}">Dashboard</a>
-              <!-- <a href="{{ get_url(path="taxonomy") }}">Taxonomy</a>
-              <a href="{{ get_url(path="papers") }}">Papers</a>
-              <a href="{{ get_url(path="tools") }}">Tools</a> -->
-          </nav>
-      </div> 
+      </div>
+      <nav class="nav">
+          <a href="{{ get_url(path="") }}">Home</a>
+          <a href="{{ get_url(path='dashboard') }}">Dashboard</a>
+      </nav>
     </header>
 
     <main>

@@ -14,7 +14,7 @@ Feature toggles are powerful for deployment and experimentation, but they can ac
 - Updated: ...
 -->
 
-## The count of added and removed feature toggles in software projects
+## Feature Toggle Lifecycle in Kubernetes
 <div id="vis"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -75,6 +75,7 @@ setInterval(draw, 1000 * 60 * 60 * 6);
 draw();
 </script>
 
+<!--
 ## Interactive Toggle List
 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"/>
@@ -130,3 +131,4 @@ fetch("data/feature_gates_events.csv")
     });
   });
 </script>
+-->
