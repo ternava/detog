@@ -1,4 +1,7 @@
 sha,date,event,feature,line
+594ed6392b70d1678735fc347ce56c9e105247cc,2025-11-29,added,ChangeContainerStatusOnKubeletRestart,"+	ChangeContainerStatusOnKubeletRestart featuregate.Feature = "ChangeContainerStatusOnKubeletRestart""
+594ed6392b70d1678735fc347ce56c9e105247cc,2025-11-29,added,StatefulSetSemanticRevisionComparison,"+	StatefulSetSemanticRevisionComparison featuregate.Feature = "StatefulSetSemanticRevisionComparison""
+277de617bba1eb16a8107636e2a549ad58eb4ae2,2025-07-08,added,ImageVolumeWithDigest,"+	ImageVolumeWithDigest featuregate.Feature = "ImageVolumeWithDigest""
 854e67bb51e177b4b9c012928d8271704e9cb80d,2025-11-13,added,OpportunisticBatching,"+	OpportunisticBatching featuregate.Feature = "OpportunisticBatching""
 6d3013425695862ef8923415cb2540fcab5680f2,2025-10-20,added,InPlacePodLevelResourcesVerticalScaling,"+	InPlacePodLevelResourcesVerticalScaling featuregate.Feature = "InPlacePodLevelResourcesVerticalScaling""
 aceb89debc2632c5c9956c8b7ef591426a485447,2025-11-10,added,TaintTolerationComparisonOperators,"+	TaintTolerationComparisonOperators featuregate.Feature = "TaintTolerationComparisonOperators""
