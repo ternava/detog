@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+401a73ceb19bed421ad2284821b05014a9b1493e,2026-01-21,removed,MemoryManager,"-	MemoryManager featuregate.Feature = "MemoryManager""
 c8fc0a1b98a201d38d76679748c96572cb2831b3,2025-11-13,removed,CSIMigrationPortworx,"-	CSIMigrationPortworx featuregate.Feature = "CSIMigrationPortworx""
 c8fc0a1b98a201d38d76679748c96572cb2831b3,2025-11-13,removed,InTreePluginPortworxUnregister,"-	InTreePluginPortworxUnregister featuregate.Feature = "InTreePluginPortworxUnregister""
 f278b47ecd3ffeaaa5944911c4489bfa3c0db023,2026-01-08,removed,ServiceTrafficDistribution,"-	ServiceTrafficDistribution featuregate.Feature = "ServiceTrafficDistribution""
