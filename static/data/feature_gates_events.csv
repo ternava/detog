@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+4bc546455385e929fb852b500ec3ddd5a3eba69c,2025-11-18,removed,HonorPVReclaimPolicy,"-	HonorPVReclaimPolicy featuregate.Feature = "HonorPVReclaimPolicy""
 401a73ceb19bed421ad2284821b05014a9b1493e,2026-01-21,removed,MemoryManager,"-	MemoryManager featuregate.Feature = "MemoryManager""
 c8fc0a1b98a201d38d76679748c96572cb2831b3,2025-11-13,removed,CSIMigrationPortworx,"-	CSIMigrationPortworx featuregate.Feature = "CSIMigrationPortworx""
 c8fc0a1b98a201d38d76679748c96572cb2831b3,2025-11-13,removed,InTreePluginPortworxUnregister,"-	InTreePluginPortworxUnregister featuregate.Feature = "InTreePluginPortworxUnregister""
