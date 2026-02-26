@@ -15,60 +15,77 @@ Feature toggles are powerful for deployment and experimentation, but they can ac
 -->
 
 ## Feature Toggle Lifecycle in Kubernetes
-<div id="vis"></div>
+<div id="vis-k8s"></div>
+
+## Feature Toggle Lifecycle in GitLab
+<div id="vis-gitlab"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 <script>
-const spec = {
-  "description": "Added vs Removed feature gates over time",
-  "data": {
-    "url": "data/feature_gates_events.csv",
-    "format": {"type":"csv","parse":{"date":"date"}}
-  },
+const baseSpec = {
   "transform": [
     {"aggregate":[{"op":"count","as":"count"}],"groupby":["date","event"]}
   ],
-  "width":650,
-  "height":400,
+  "width": 650,
+  "height": 400,
   "mark": {
     "type": "line",
-    "point": true    // show points for tooltip interactivity
+    "point": true
   },
   "encoding": {
-     "x": {
-       "field": "date",
-       "type": "temporal",
-       "title": "Date",
-       "axis": {
-         "format": "%Y",
-         "tickCount": {"interval": "year"}
-       }
-     },
-      "y": {"field":"count","type":"quantitative","title":"Number of Toggles"},
-     "color": {
-       "field": "event",
-       "type": "nominal",
-       "title": "Event",
-       "scale": {
-         "domain": ["removed", "added"],
-         "range": ["red", "blue"]
-       },
-       "legend": {
-         "orient": "top-right"
-       }
-     },
-     "tooltip": [
-       {"field":"date","type":"temporal","title":"Date"},
-       {"field":"count","type":"quantitative","title":"Count"},
-       {"field":"event","type":"nominal","title":"Event"}
-     ]
-    }
-  };
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {
+        "format": "%Y",
+        "tickCount": {"interval": "year"}
+      }
+    },
+    "y": {"field":"count","type":"quantitative","title":"Number of Toggles"},
+    "color": {
+      "field": "event",
+      "type": "nominal",
+      "title": "Event",
+      "scale": {
+        "domain": ["removed", "added"],
+        "range": ["red", "blue"]
+      },
+      "legend": {
+        "orient": "top-right"
+      }
+    },
+    "tooltip": [
+      {"field":"date","type":"temporal","title":"Date"},
+      {"field":"count","type":"quantitative","title":"Count"},
+      {"field":"event","type":"nominal","title":"Event"}
+    ]
+  }
+};
+
+const k8sSpec = {
+  ...baseSpec,
+  "description": "Kubernetes Feature Gates: Added vs Removed over time",
+  "data": {
+    "url": "data/feature_gates_events.csv",
+    "format": {"type":"csv","parse":{"date":"date"}}
+  }
+};
+
+const gitlabSpec = {
+  ...baseSpec,
+  "description": "GitLab Feature Flags: Added vs Removed over time",
+  "data": {
+    "url": "data/gitlab_feature_flags_events.csv",
+    "format": {"type":"csv","parse":{"date":"date"}}
+  }
+};
 
 function draw() {
-  vegaEmbed('#vis', spec, {actions:false});
+  vegaEmbed('#vis-k8s', k8sSpec, {actions:false});
+  vegaEmbed('#vis-gitlab', gitlabSpec, {actions:false});
 }
 
 setInterval(draw, 1000 * 60 * 60 * 6);

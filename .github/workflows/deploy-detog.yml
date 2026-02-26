@@ -24,26 +24,35 @@ jobs:
       - name: Ensure data directory exists
         run: mkdir -p static/data
 
-      - name: Extract feature-gate events
+      - name: Extract Kubernetes feature-gate events
         run: |
           chmod +x scripts/clone-extract-feature-gates.sh
           scripts/clone-extract-feature-gates.sh
+
+      - name: Extract GitLab feature-flag events
+        run: |
+          chmod +x scripts/clone-extract-feature-flags-gitlab.sh
+          scripts/clone-extract-feature-flags-gitlab.sh
 
       - name: Debug CSV contents
         run: |
           echo "Contents of static/data directory:"
           ls -lah static/data
-          echo "Preview of CSV:"
-          head -n 5 static/data/feature_gates_events.csv || echo "CSV missing or empty"
+          echo "--- Kubernetes feature gates ---"
+          wc -l static/data/feature_gates_events.csv
+          head -n 3 static/data/feature_gates_events.csv
+          echo "--- GitLab feature flags ---"
+          wc -l static/data/gitlab_feature_flags_events.csv
+          head -n 3 static/data/gitlab_feature_flags_events.csv
 
-      - name: Commit & Push generated CSV
+      - name: Commit & Push generated CSVs
         run: |
           git config user.name 'github-actions'
           git config user.email 'github-actions@users.noreply.github.com'
           # Sync with remote to allow fast-forward
           git pull --rebase origin main --autostash
-          git add static/data/feature_gates_events.csv
-          git commit -m 'Automated update of feature gates CSV' || echo 'No changes to commit'
+          git add static/data/feature_gates_events.csv static/data/gitlab_feature_flags_events.csv
+          git commit -m 'Automated update of feature toggle CSVs' || echo 'No changes to commit'
           git push origin main
 
       - name: Install Zola

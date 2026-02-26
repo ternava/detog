@@ -13,15 +13,20 @@ OUTPUT_CSV=${3:-"$BASE_DIR/static/data/feature_gates_events.csv"}
 # ensure target dir exists
 mkdir -p "$(dirname "$OUTPUT_CSV")"
 
-# always remove any old clone and clone fresh
-rm -rf "$CLONE_DIR"
-mkdir -p "$(dirname "$CLONE_DIR")"
-git clone "$REPO_URL" "$CLONE_DIR"
-cd "$CLONE_DIR"
+# clone or update the repo
+if [ -d "$CLONE_DIR/.git" ]; then
+  cd "$CLONE_DIR"
+  git pull
+else
+  rm -rf "$CLONE_DIR"
+  mkdir -p "$(dirname "$CLONE_DIR")"
+  git clone --single-branch "$REPO_URL" "$CLONE_DIR"
+  cd "$CLONE_DIR"
+fi
 
-# extract full patch log for kube_features.go across all refs
+# extract patch log for kube_features.go on main branch only
 LOGFILE=$(mktemp)
-git log -p --date=short --branches --tags --remotes \
+git log -p --date=short \
   -G 'featuregate\.Feature|utilfeature\.Feature' -- pkg/features/kube_features.go \
   > "$LOGFILE"
 
