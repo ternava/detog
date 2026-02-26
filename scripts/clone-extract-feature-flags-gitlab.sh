@@ -16,15 +16,33 @@ mkdir -p "$(dirname "$OUTPUT_CSV")"
 # clone or update the repo
 # Use --filter=blob:none for a blobless clone (much faster for large repos
 # like GitLab ~13 GB); git log --name-status only needs the commit graph.
-if [ -d "$CLONE_DIR/.git" ]; then
-  cd "$CLONE_DIR"
-  git pull
-else
+MAX_RETRIES=5
+RETRY_DELAY=30
+
+clone_or_update() {
+  if [ -d "$CLONE_DIR/.git" ]; then
+    cd "$CLONE_DIR"
+    git pull
+  else
+    rm -rf "$CLONE_DIR"
+    mkdir -p "$(dirname "$CLONE_DIR")"
+    git clone --filter=blob:none --single-branch "$REPO_URL" "$CLONE_DIR"
+    cd "$CLONE_DIR"
+  fi
+}
+
+for attempt in $(seq 1 "$MAX_RETRIES"); do
+  if clone_or_update; then
+    break
+  fi
+  if [ "$attempt" -eq "$MAX_RETRIES" ]; then
+    echo "ERROR: Failed to clone/update after $MAX_RETRIES attempts"
+    exit 1
+  fi
+  echo "Attempt $attempt failed, retrying in ${RETRY_DELAY}s..."
   rm -rf "$CLONE_DIR"
-  mkdir -p "$(dirname "$CLONE_DIR")"
-  git clone --filter=blob:none --single-branch "$REPO_URL" "$CLONE_DIR"
-  cd "$CLONE_DIR"
-fi
+  sleep "$RETRY_DELAY"
+done
 
 # extract log of added/deleted feature flag .yml files on main branch only
 LOGFILE=$(mktemp)
