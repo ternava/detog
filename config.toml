@@ -8,8 +8,6 @@ compile_sass = true
 build_search_index = false
 
 [markdown]
-# Whether to do syntax highlighting
-highlight_code = false
 
 [extra]
 # Site info
