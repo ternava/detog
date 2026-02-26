@@ -13,20 +13,24 @@ OUTPUT_CSV=${3:-"$BASE_DIR/static/data/gitlab_feature_flags_events.csv"}
 # ensure target dir exists
 mkdir -p "$(dirname "$OUTPUT_CSV")"
 
-# clone or update the repo
-# Use --filter=blob:none for a blobless clone (much faster for large repos
-# like GitLab ~13 GB); git log --name-status only needs the commit graph.
+# Clone or update the repo.
+# We use --single-branch (only master) and --no-checkout (skip working tree)
+# because we only need the git object DB for git-log, not the 94K checked-out
+# files.  A blobless clone (--filter=blob:none) does NOT work reliably here
+# because git-log --name-status triggers lazy tree fetches that overload
+# GitLab's server with 503 errors.
 MAX_RETRIES=5
-RETRY_DELAY=30
+RETRY_DELAY=60
 
 clone_or_update() {
   if [ -d "$CLONE_DIR/.git" ]; then
     cd "$CLONE_DIR"
-    git pull
+    git fetch origin
+    git reset --hard origin/HEAD
   else
     rm -rf "$CLONE_DIR"
     mkdir -p "$(dirname "$CLONE_DIR")"
-    git clone --filter=blob:none --single-branch "$REPO_URL" "$CLONE_DIR"
+    git clone --single-branch --no-checkout "$REPO_URL" "$CLONE_DIR"
     cd "$CLONE_DIR"
   fi
 }
@@ -44,31 +48,13 @@ for attempt in $(seq 1 "$MAX_RETRIES"); do
   sleep "$RETRY_DELAY"
 done
 
-# For blobless clones, git log --name-status triggers lazy tree fetches.
-# Pre-fetch trees for the path we care about to avoid per-commit remote calls.
-echo "Pre-fetching tree objects for config/feature_flags/ ..."
-git rev-list HEAD -- config/feature_flags/ \
-  | git cat-file --batch-check='%(objecttype) %(objectname)' \
-  | awk '/^tree /{print $2}' \
-  | git fetch-pack --stdin "$REPO_URL" 2>/dev/null || true
-
 # extract log of added/deleted feature flag .yml files on main branch only
+# All objects are local so this never contacts the remote.
 LOGFILE=$(mktemp)
-
-for attempt in $(seq 1 "$MAX_RETRIES"); do
-  if git log --diff-filter=AD --name-status --date=short \
-    --pretty=format:"commit %H %P%nDate: %ad" \
-    -- 'config/feature_flags/' \
-    > "$LOGFILE" 2>/dev/null; then
-    break
-  fi
-  if [ "$attempt" -eq "$MAX_RETRIES" ]; then
-    echo "ERROR: git log failed after $MAX_RETRIES attempts"
-    exit 1
-  fi
-  echo "git log attempt $attempt failed, retrying in ${RETRY_DELAY}s..."
-  sleep "$RETRY_DELAY"
-done
+git log --diff-filter=AD --name-status --date=short \
+  --pretty=format:"commit %H %P%nDate: %ad" \
+  -- 'config/feature_flags/' \
+  > "$LOGFILE"
 
 # parse into CSV (disable -e during the loop to avoid early exit on pattern mismatches)
 : > "$OUTPUT_CSV"
