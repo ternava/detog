@@ -44,12 +44,31 @@ for attempt in $(seq 1 "$MAX_RETRIES"); do
   sleep "$RETRY_DELAY"
 done
 
+# For blobless clones, git log --name-status triggers lazy tree fetches.
+# Pre-fetch trees for the path we care about to avoid per-commit remote calls.
+echo "Pre-fetching tree objects for config/feature_flags/ ..."
+git rev-list HEAD -- config/feature_flags/ \
+  | git cat-file --batch-check='%(objecttype) %(objectname)' \
+  | awk '/^tree /{print $2}' \
+  | git fetch-pack --stdin "$REPO_URL" 2>/dev/null || true
+
 # extract log of added/deleted feature flag .yml files on main branch only
 LOGFILE=$(mktemp)
-git log --diff-filter=AD --name-status --date=short \
-  --pretty=format:"commit %H %P%nDate: %ad" \
-  -- 'config/feature_flags/' \
-  > "$LOGFILE"
+
+for attempt in $(seq 1 "$MAX_RETRIES"); do
+  if git log --diff-filter=AD --name-status --date=short \
+    --pretty=format:"commit %H %P%nDate: %ad" \
+    -- 'config/feature_flags/' \
+    > "$LOGFILE" 2>/dev/null; then
+    break
+  fi
+  if [ "$attempt" -eq "$MAX_RETRIES" ]; then
+    echo "ERROR: git log failed after $MAX_RETRIES attempts"
+    exit 1
+  fi
+  echo "git log attempt $attempt failed, retrying in ${RETRY_DELAY}s..."
+  sleep "$RETRY_DELAY"
+done
 
 # parse into CSV (disable -e during the loop to avoid early exit on pattern mismatches)
 : > "$OUTPUT_CSV"
