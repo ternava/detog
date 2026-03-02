@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+a2f86425778b9d9c827041818e8d7b51d1e3d323,2026-03-01,added,git_ref_validator_custom_validation,"config/feature_flags/gitlab_com_derisk/git_ref_validator_custom_validation.yml"
 c48b245365e422b87741a599454fefac1da8f9f6,2026-02-27,added,snowplow_emitter_http_timeout,"config/feature_flags/ops/snowplow_emitter_http_timeout.yml"
 c48b245365e422b87741a599454fefac1da8f9f6,2026-02-27,added,snowplow_emitter_thread_count,"config/feature_flags/ops/snowplow_emitter_thread_count.yml"
 3a84ec8d88d223815f496fa742e2c57923e796f5,2026-02-27,removed,search_project_list_lookup,"config/feature_flags/gitlab_com_derisk/search_project_list_lookup.yml"
