@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+ad6c155449e38d7cca22230fdb99ae02b65ccb59,2025-11-10,added,ResourceHealthStatusMessage,"+	ResourceHealthStatusMessage featuregate.Feature = "ResourceHealthStatusMessage""
 c8e8bd5085d61138270f9660e09f314372bf1eda,2026-02-26,added,StaleControllerConsistencyStatefulSet,"+	StaleControllerConsistencyStatefulSet featuregate.Feature = "StaleControllerConsistencyStatefulSet""
 f18f0df7feb87b60e6e31ae08009ee4d433ff9e2,2026-02-24,added,StaleControllerConsistencyReplicaSet,"+	StaleControllerConsistencyReplicaSet featuregate.Feature = "StaleControllerConsistencyReplicaSet""
 61d0dd30fb7865f64cadca142f9a3e8a844e7a2f,2026-02-24,added,StaleControllerConsistencyJob,"+	StaleControllerConsistencyJob featuregate.Feature = "StaleControllerConsistencyJob""
