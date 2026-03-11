@@ -1,4 +1,6 @@
 sha,date,event,feature,line
+957f6a4ba905c1d11a362327bc8e221e28068981,2026-03-10,added,duo_quick_action,"config/feature_flags/gitlab_com_derisk/duo_quick_action.yml"
+c5e87287de3380d7c7b450986291bc56282622e6,2026-03-09,removed,ci_deep_resolve_reference_array_and_hash,"config/feature_flags/gitlab_com_derisk/ci_deep_resolve_reference_array_and_hash.yml"
 eac02d2d278758aaca67172226e9d8b4dd180bee,2026-03-09,added,dap_free_tier_gitlab_credits,"config/feature_flags/beta/dap_free_tier_gitlab_credits.yml"
 472e2e47c10e881af3fab9b470f026b72ef5aadc,2026-03-09,added,duo_add_otel,"config/feature_flags/wip/duo_add_otel.yml"
 d0c2c9cd08d41503c80eb98710f3eceb47967918,2026-03-09,added,optimized_code_owner_entries_since_commit,"config/feature_flags/gitlab_com_derisk/optimized_code_owner_entries_since_commit.yml"
