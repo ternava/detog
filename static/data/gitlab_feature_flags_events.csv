@@ -1,4 +1,11 @@
 sha,date,event,feature,line
+d3d10ac7044f72648789aa896b201eecc592aa9c,2026-03-16,added,ldap_raise_on_search_error,"config/feature_flags/ops/ldap_raise_on_search_error.yml"
+9a6b2ab3d675b0d3611a93fb13775119d79b338e,2026-03-16,added,ci_partition_pruning_workers,"config/feature_flags/gitlab_com_derisk/ci_partition_pruning_workers.yml"
+b43c297e265c712c9508455998855ebe0b584488,2026-03-16,removed,glql_aggregation,"config/feature_flags/wip/glql_aggregation.yml"
+33b5eb704c981cc3e3a7edd3199362ccadde37e2,2026-03-16,added,mr_lookup_by_checking_traversal_ids_on_join,"config/feature_flags/wip/mr_lookup_by_checking_traversal_ids_on_join.yml"
+dc5025dd88e5d49f2e48657b070b94d9457282f1,2026-03-16,added,explore_analytics_dashboards,"config/feature_flags/wip/explore_analytics_dashboards.yml"
+a76381772bd1d7b4625ff5e1834173673c9e0e19,2026-03-12,removed,preload_gitaly_in_ensure_mr_diff,"config/feature_flags/gitlab_com_derisk/preload_gitaly_in_ensure_mr_diff.yml"
+5bb79a4c888e8105bbc2f04b80f04e37886ee9da,2026-03-13,added,org_admin_area,"config/feature_flags/wip/org_admin_area.yml"
 91533d07e7b47e0bae48be615a32b6f05ff58667,2026-03-13,added,offline_transfer_ui,"config/feature_flags/wip/offline_transfer_ui.yml"
 c4cc96b9919bf09618b501d3bd433f494862d738,2026-03-14,added,ci_stop_writing_to_pipeline_variables,"config/feature_flags/gitlab_com_derisk/ci_stop_writing_to_pipeline_variables.yml"
 e330dcb1af6b7a1972572363a4f0a2ca3f7f5eb5,2026-03-13,removed,additional_snowplow_tracking,"config/feature_flags/ops/additional_snowplow_tracking.yml"
