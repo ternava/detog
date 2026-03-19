@@ -1,4 +1,6 @@
 sha,date,event,feature,line
+15ad8cbb6995e1c61c5f4fae4f50a8347452f20a,2026-03-13,added,ServiceCIDRStatusFieldWiping,"+	ServiceCIDRStatusFieldWiping featuregate.Feature = "ServiceCIDRStatusFieldWiping""
+cdfa045414f6c1cdc403dc71fec4eafe4374b246,2026-01-30,added,DRANodeAllocatableResources,"+	DRANodeAllocatableResources featuregate.Feature = "DRANodeAllocatableResources""
 63e5f3aac34ee529107a37ebf51e972e5cbb2de2,2026-02-25,added,PLEGOnDemandRelist,"+	PLEGOnDemandRelist featuregate.Feature = "PLEGOnDemandRelist""
 392b5e5c82146b5af2451356cdb3558750a61624,2025-12-17,added,ExtendWebSocketsToKubelet,"+	ExtendWebSocketsToKubelet featuregate.Feature = "ExtendWebSocketsToKubelet""
 29251dafc48e81e011764c80efd984cf95f7062e,2025-10-22,added,PodLevelResourceManagers,"+	PodLevelResourceManagers featuregate.Feature = "PodLevelResourceManagers""
