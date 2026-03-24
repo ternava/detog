@@ -1,4 +1,7 @@
 sha,date,event,feature,line
+d80f384b702e4c6630e6f46b2926ab5e45553c97,2026-02-10,added,DRAWorkloadResourceClaims,"+	DRAWorkloadResourceClaims featuregate.Feature = "DRAWorkloadResourceClaims""
+29601b8628ac8ea512960bc373511ae46888e502,2026-03-17,added,DRAResourcePoolStatus,"+	DRAResourcePoolStatus featuregate.Feature = "DRAResourcePoolStatus""
+81c0b9ce3422413cc28efffeedd5b4e7817abf13,2026-03-16,added,DRAListTypeAttributes,"+	DRAListTypeAttributes featuregate.Feature = "DRAListTypeAttributes""
 d2dbd4c08dd016f42a9aa38141d294ea161fe4ef,2026-03-18,added,InPlacePodVerticalScalingInitContainers,"+	InPlacePodVerticalScalingInitContainers featuregate.Feature = "InPlacePodVerticalScalingInitContainers""
 044f65ca5c2f21af4e431f9d34aaf6826bcf9dcf,2025-10-06,added,PodsAPI,"+	PodsAPI featuregate.Feature = "PodsAPI""
 6c087b2724704fc24cc796d21c6a88e8b04fc7ba,2026-03-17,added,PersistentVolumeClaimUnusedSinceTime,"+	PersistentVolumeClaimUnusedSinceTime featuregate.Feature = "PersistentVolumeClaimUnusedSinceTime""
