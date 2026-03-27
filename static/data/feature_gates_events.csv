@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+adbf3b5aa597637b6825844983e3847033a17b39,2025-10-30,added,DRAResourceClaimGranularStatusAuthorization,"+	DRAResourceClaimGranularStatusAuthorization featuregate.Feature = "DRAResourceClaimGranularStatusAuthorization""
 d80f384b702e4c6630e6f46b2926ab5e45553c97,2026-02-10,added,DRAWorkloadResourceClaims,"+	DRAWorkloadResourceClaims featuregate.Feature = "DRAWorkloadResourceClaims""
 29601b8628ac8ea512960bc373511ae46888e502,2026-03-17,added,DRAResourcePoolStatus,"+	DRAResourcePoolStatus featuregate.Feature = "DRAResourcePoolStatus""
 81c0b9ce3422413cc28efffeedd5b4e7817abf13,2026-03-16,added,DRAListTypeAttributes,"+	DRAListTypeAttributes featuregate.Feature = "DRAListTypeAttributes""
