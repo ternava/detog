@@ -1,4 +1,7 @@
 sha,date,event,feature,line
+0844b7673b5284a0300e3c26c3317b9b55f5d1a3,2026-04-01,added,label_transfer_service_query_improvements,"config/feature_flags/beta/label_transfer_service_query_improvements.yml"
+d7bf2a51c5cc38265ab85a86fd2baea750c3a6e4,2026-04-01,added,ci_finished_pipelines_sync_high_workers,"config/feature_flags/ops/ci_finished_pipelines_sync_high_workers.yml"
+d7bf2a51c5cc38265ab85a86fd2baea750c3a6e4,2026-04-01,added,ci_finished_pipelines_sync_medium_workers,"config/feature_flags/ops/ci_finished_pipelines_sync_medium_workers.yml"
 0ff360cf21a24444f09e97c376d36103a6118132,2026-03-31,added,offline_transfer_imports,"config/feature_flags/wip/offline_transfer_imports.yml"
 e7e3e2bb76774c0bcace12aeabc4bee056a87ab0,2026-03-31,removed,duo_quick_action,"config/feature_flags/gitlab_com_derisk/duo_quick_action.yml"
 e1d98db2be93ab669c13049c8142815c62ba4ba7,2026-03-31,added,ci_config_fetch_timeout_override,"config/feature_flags/ops/ci_config_fetch_timeout_override.yml"
