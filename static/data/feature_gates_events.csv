@@ -4,6 +4,7 @@ bfe8f6b7298d9ff9262d4cf8081e9ca8d2510fc0,2026-04-04,added,WorkloadWithJob,"+	Wor
 b9b0ff440d5493764532348e0d80abdb7daf47b5,2026-04-04,removed,EnableWorkloadWithJob,"-	EnableWorkloadWithJob featuregate.Feature = "EnableWorkloadWithJob""
 b9b0ff440d5493764532348e0d80abdb7daf47b5,2026-04-04,added,WorkloadWithJob,"+	WorkloadWithJob featuregate.Feature = "WorkloadWithJob""
 adbf3b5aa597637b6825844983e3847033a17b39,2025-10-30,added,DRAResourceClaimGranularStatusAuthorization,"+	DRAResourceClaimGranularStatusAuthorization featuregate.Feature = "DRAResourceClaimGranularStatusAuthorization""
+9a1b8cbe492cae9943160c5eaeba7b3caf1cf7c5,2025-11-18,removed,AnyVolumeDataSource,"-	AnyVolumeDataSource featuregate.Feature = "AnyVolumeDataSource""
 d80f384b702e4c6630e6f46b2926ab5e45553c97,2026-02-10,added,DRAWorkloadResourceClaims,"+	DRAWorkloadResourceClaims featuregate.Feature = "DRAWorkloadResourceClaims""
 29601b8628ac8ea512960bc373511ae46888e502,2026-03-17,added,DRAResourcePoolStatus,"+	DRAResourcePoolStatus featuregate.Feature = "DRAResourcePoolStatus""
 81c0b9ce3422413cc28efffeedd5b4e7817abf13,2026-03-16,added,DRAListTypeAttributes,"+	DRAListTypeAttributes featuregate.Feature = "DRAListTypeAttributes""
