@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+b1c8bf1e320d70eae517379fcd624b6bf757af29,2026-04-28,removed,AuthorizeNodeWithSelectors,"-	AuthorizeNodeWithSelectors featuregate.Feature = "AuthorizeNodeWithSelectors""
 2c4064f31c23c0283ce9bfee1804aefcbabffa65,2026-04-06,added,HPAGeneration,"+	HPAGeneration featuregate.Feature = "HPAGeneration""
 50f08420d34dec89e515a350410feba3dbb26439,2026-04-14,removed,SchedulerQueueingHints,"-	SchedulerQueueingHints featuregate.Feature = "SchedulerQueueingHints""
 bfe8f6b7298d9ff9262d4cf8081e9ca8d2510fc0,2026-04-04,removed,WorkloadWithJob,"-	WorkloadWithJob featuregate.Feature = "WorkloadWithJob""
