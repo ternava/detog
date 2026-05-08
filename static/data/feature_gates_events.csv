@@ -1,4 +1,7 @@
 sha,date,event,feature,line
+c35fd21a6b51abb3495501b1bbf331f93873e9ad,2026-05-04,removed,JobPodReplacementPolicy,"-	JobPodReplacementPolicy featuregate.Feature = "JobPodReplacementPolicy""
+57a80ebae8adfd1f654d601786ac60de157a733e,2026-04-30,removed,JobSuccessPolicy,"-	JobSuccessPolicy featuregate.Feature = "JobSuccessPolicy""
+432a3477cc22c4f708230e45e746b3d09461e9a4,2026-04-30,removed,JobBackoffLimitPerIndex,"-	JobBackoffLimitPerIndex featuregate.Feature = "JobBackoffLimitPerIndex""
 9991d72c6b2dc3a19207adfae5b121214c5bf831,2026-04-30,added,NodeControllerLeaseCircuitBreaker,"+	NodeControllerLeaseCircuitBreaker featuregate.Feature = "NodeControllerLeaseCircuitBreaker""
 3a8fa19caeb302ea48405a403d9ed65a286e18f3,2026-04-30,removed,LogarithmicScaleDown,"-	LogarithmicScaleDown featuregate.Feature = "LogarithmicScaleDown""
 b1c8bf1e320d70eae517379fcd624b6bf757af29,2026-04-28,removed,AuthorizeNodeWithSelectors,"-	AuthorizeNodeWithSelectors featuregate.Feature = "AuthorizeNodeWithSelectors""
