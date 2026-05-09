@@ -1,4 +1,7 @@
 sha,date,event,feature,line
+8bda44f413f181c8b1aee0d3b155b45231932efe,2026-05-08,removed,StreamingCollectionEncodingToProtobuf,"-	StreamingCollectionEncodingToProtobuf featuregate.Feature = "StreamingCollectionEncodingToProtobuf""
+16cc05969fd6144e40e7c5546704f2d3b1b2c893,2026-05-08,removed,StreamingCollectionEncodingToJSON,"-	StreamingCollectionEncodingToJSON featuregate.Feature = "StreamingCollectionEncodingToJSON""
+dfa449fabf3a5126f2d4d381d224a1339daf5cf1,2026-05-08,removed,OrderedNamespaceDeletion,"-	OrderedNamespaceDeletion featuregate.Feature = "OrderedNamespaceDeletion""
 c35fd21a6b51abb3495501b1bbf331f93873e9ad,2026-05-04,removed,JobPodReplacementPolicy,"-	JobPodReplacementPolicy featuregate.Feature = "JobPodReplacementPolicy""
 57a80ebae8adfd1f654d601786ac60de157a733e,2026-04-30,removed,JobSuccessPolicy,"-	JobSuccessPolicy featuregate.Feature = "JobSuccessPolicy""
 432a3477cc22c4f708230e45e746b3d09461e9a4,2026-04-30,removed,JobBackoffLimitPerIndex,"-	JobBackoffLimitPerIndex featuregate.Feature = "JobBackoffLimitPerIndex""

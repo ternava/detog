@@ -1,4 +1,6 @@
 sha,date,event,feature,line
+91fd4f025cd19e741300c86e2ede12c0125b2cd2,2026-05-08,removed,ci_cache_remote_includes,"config/feature_flags/development/ci_cache_remote_includes.yml"
+33b53041535c16db0fa2004cad384a07b89a9530,2026-05-08,added,conan_structured_error_responses,"config/feature_flags/gitlab_com_derisk/conan_structured_error_responses.yml"
 bac774850ae88254e13a8bd3f7e648d5223694f5,2026-05-08,removed,geo_job_artifact_verification_summaries,"config/feature_flags/gitlab_com_derisk/geo_job_artifact_verification_summaries.yml"
 77f5f8f3e23fc7833282b28c7c11d62a9aade3fd,2026-05-07,added,orbit_code_intelligence,"config/feature_flags/beta/orbit_code_intelligence.yml"
 4e16930070554a1f71a95815ef68a2b213998a78,2026-05-07,added,work_item_rest_api_frontend_users,"config/feature_flags/wip/work_item_rest_api_frontend_users.yml"
