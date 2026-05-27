@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+cbc8e77b2a6232e5f76a11fa726eaf9d5b9374c5,2026-05-21,removed,RelaxedDNSSearchValidation,"-	RelaxedDNSSearchValidation featuregate.Feature = "RelaxedDNSSearchValidation""
 9b2b31c3c59f3560b9ab0a9994e38f70da5ca8ed,2026-05-13,added,StaleControllerConsistencyHPA,"+	StaleControllerConsistencyHPA featuregate.Feature = "StaleControllerConsistencyHPA""
 8bda44f413f181c8b1aee0d3b155b45231932efe,2026-05-08,removed,StreamingCollectionEncodingToProtobuf,"-	StreamingCollectionEncodingToProtobuf featuregate.Feature = "StreamingCollectionEncodingToProtobuf""
 16cc05969fd6144e40e7c5546704f2d3b1b2c893,2026-05-08,removed,StreamingCollectionEncodingToJSON,"-	StreamingCollectionEncodingToJSON featuregate.Feature = "StreamingCollectionEncodingToJSON""
