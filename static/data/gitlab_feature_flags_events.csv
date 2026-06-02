@@ -1,4 +1,10 @@
 sha,date,event,feature,line
+3af83549bda833333c0596b5261964f79531a2bf,2026-06-01,removed,search_autocomplete_use_ilike,"config/feature_flags/gitlab_com_derisk/search_autocomplete_use_ilike.yml"
+071d8852dfcb763b6e1c27c1a3c63f79a874377c,2026-06-01,added,update_sast_vr_setting_permission,"config/feature_flags/wip/update_sast_vr_setting_permission.yml"
+b35b41a81d34ff7a2044eb226259082650e4b63b,2026-06-01,added,planning_view_boards,"config/feature_flags/wip/planning_view_boards.yml"
+1e09398d1463f644e8970d541b9ad2a5cccdc4b3,2026-06-01,added,use_css_language_classes,"config/feature_flags/gitlab_com_derisk/use_css_language_classes.yml"
+175ec087a549dd5469076500cd7e2a664dddeacb,2026-06-01,added,gate_token_exchange_endpoint,"config/feature_flags/gitlab_com_derisk/gate_token_exchange_endpoint.yml"
+5ddff9404832eac57880a2f04be377e9eec44244,2026-05-06,removed,mr_reports_tab,"config/feature_flags/beta/mr_reports_tab.yml"
 21f25934829c78e2b2b29b177404bb30dbe2e9e1,2026-05-29,added,wildcard_pattern_overlap_for_mrap,"config/feature_flags/wip/wildcard_pattern_overlap_for_mrap.yml"
 60fb604a189f183d49cc7bf95712e5e4afb5b49f,2026-05-29,removed,recently_viewed_wiki_pages,"config/feature_flags/gitlab_com_derisk/recently_viewed_wiki_pages.yml"
 3beee0dd4ab94354f27f80522baaff28b2c2ddca,2026-05-29,removed,ai_catalog_filter_enabled_projects,"config/feature_flags/gitlab_com_derisk/ai_catalog_filter_enabled_projects.yml"
