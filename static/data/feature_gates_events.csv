@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+3eadc14e990ca9f2648aa5fc5bc038593aa6600e,2026-05-19,added,CompositePodGroup,"+	CompositePodGroup featuregate.Feature = "CompositePodGroup""
 f7265100cb89487cea71db566cb2f38e748620d8,2026-05-31,added,KubeProxyIPVS,"+	KubeProxyIPVS featuregate.Feature = "KubeProxyIPVS""
 cbc8e77b2a6232e5f76a11fa726eaf9d5b9374c5,2026-05-21,removed,RelaxedDNSSearchValidation,"-	RelaxedDNSSearchValidation featuregate.Feature = "RelaxedDNSSearchValidation""
 9b2b31c3c59f3560b9ab0a9994e38f70da5ca8ed,2026-05-13,added,StaleControllerConsistencyHPA,"+	StaleControllerConsistencyHPA featuregate.Feature = "StaleControllerConsistencyHPA""
