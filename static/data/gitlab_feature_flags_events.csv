@@ -1,4 +1,9 @@
 sha,date,event,feature,line
+f3b281e653860c465650511a366a44428d1ccfc3,2026-06-16,added,partition_aware_pipeline_preload,"config/feature_flags/gitlab_com_derisk/partition_aware_pipeline_preload.yml"
+1843d1dd810e2420dabb2c3365833865479a337a,2026-06-16,added,request_cost_headers,"config/feature_flags/gitlab_com_derisk/request_cost_headers.yml"
+ebde6550a9898d6bf277f1304d11f6e493e4d3d1,2026-06-16,removed,fix_merge_api_train_bypass,"config/feature_flags/gitlab_com_derisk/fix_merge_api_train_bypass.yml"
+2a74e14d830bb9f0fc4e11e7a8a71fd0b1c8910c,2026-06-16,removed,group_destroy_update_project_authorizations_per_project,"config/feature_flags/beta/group_destroy_update_project_authorizations_per_project.yml"
+8ab2f27d315dea4dbc555e68ba09d00acd87c4d6,2026-06-15,added,chatgpt_oauth_sign_in,"config/feature_flags/gitlab_com_derisk/chatgpt_oauth_sign_in.yml"
 63873d1613187770ba9042ebdf7feec16cfb8008,2026-06-15,removed,semantic_code_search_rest_api,"config/feature_flags/beta/semantic_code_search_rest_api.yml"
 9d56495815834ef4f864a5c6c9888238ac040564,2026-06-15,added,org_stage_beta,"config/feature_flags/ops/org_stage_beta.yml"
 9d56495815834ef4f864a5c6c9888238ac040564,2026-06-15,added,org_stage_experimental,"config/feature_flags/ops/org_stage_experimental.yml"
