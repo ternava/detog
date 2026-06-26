@@ -1,4 +1,8 @@
 sha,date,event,feature,line
+97bc1b6741f06da8a9dcce9ad460e630a0797b9b,2026-06-25,added,ci_drop_downstream_bridge_without_transaction,"config/feature_flags/gitlab_com_derisk/ci_drop_downstream_bridge_without_transaction.yml"
+e2de1e7ce467d25ee552cc0d3f26af421bc5394c,2026-06-25,added,billing_event_tracking,"config/feature_flags/development/billing_event_tracking.yml"
+05b84b85692e1844b5d78e1f7146db55994c4c10,2026-06-25,removed,sarif_ingestion,"config/feature_flags/beta/sarif_ingestion.yml"
+8144f2349a63486a4d77d088a071aef97b2269fc,2026-06-10,added,redact_resolved_secret_details,"config/feature_flags/gitlab_com_derisk/redact_resolved_secret_details.yml"
 5e94b6a0ca423edf82ac85a890eb1f43c910ee2c,2026-06-24,added,organization_read_only_enforcement,"config/feature_flags/gitlab_com_derisk/organization_read_only_enforcement.yml"
 b26956fc95befd4603dc279ddae00b361e7c62a2,2026-06-24,added,ci_rules_regexp,"config/feature_flags/gitlab_com_derisk/ci_rules_regexp.yml"
 c7db0fcec69cecffbe1d1c43180bdb6881ebf92c,2026-06-24,removed,rate_limiter_use_labkit_cohort_2,"config/feature_flags/wip/rate_limiter_use_labkit_cohort_2.yml"
