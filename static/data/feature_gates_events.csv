@@ -1,4 +1,6 @@
 sha,date,event,feature,line
+d2842d8f03bf0c1568efdf19aeee1c505954d42b,2026-06-30,added,PodGroupPreemptionPolicy,"+	PodGroupPreemptionPolicy featuregate.Feature = "PodGroupPreemptionPolicy""
+df355236d58d9c54226e892f01047595c9a53d3d,2026-03-19,added,HugepageAwareEviction,"+	HugepageAwareEviction featuregate.Feature = "HugepageAwareEviction""
 54ca619d4b3c31665d92868439118a4740c994a6,2026-06-05,removed,GangScheduling,"-	GangScheduling featuregate.Feature = "GangScheduling""
 54ca619d4b3c31665d92868439118a4740c994a6,2026-06-05,removed,WorkloadAwarePreemption,"-	WorkloadAwarePreemption featuregate.Feature = "WorkloadAwarePreemption""
 3eadc14e990ca9f2648aa5fc5bc038593aa6600e,2026-05-19,added,CompositePodGroup,"+	CompositePodGroup featuregate.Feature = "CompositePodGroup""
