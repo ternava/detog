@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+eff86735375b8f059d2cd7e38b2ccaa1b58bb178,2026-02-20,added,PodLevelResourcesFixKubeletQOSClass,"+	PodLevelResourcesFixKubeletQOSClass featuregate.Feature = "PodLevelResourcesFixKubeletQOSClass""
 3d336bca5cf9f0d3916e086b09e6f873ec682fd6,2026-06-24,added,NodeLifecycleConditions,"+	NodeLifecycleConditions featuregate.Feature = "NodeLifecycleConditions""
 e76929b8810bf98bcd84686398a27e3ddd95ac2e,2026-07-04,removed,PreventStaticPodAPIReferences,"-	PreventStaticPodAPIReferences featuregate.Feature = "PreventStaticPodAPIReferences""
 d2842d8f03bf0c1568efdf19aeee1c505954d42b,2026-06-30,added,PodGroupPreemptionPolicy,"+	PodGroupPreemptionPolicy featuregate.Feature = "PodGroupPreemptionPolicy""
