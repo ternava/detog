@@ -1,4 +1,10 @@
 sha,date,event,feature,line
+06f2582ebe075b978dd2c82569032579e98a4c50,2026-06-02,added,H2CContainerProbe,"+	H2CContainerProbe featuregate.Feature = "H2CContainerProbe""
+6bc5b884a6dc8812a357adecc6a6d6b2401f50ee,2026-07-17,added,KubeProxyNFTablesLocalhostNodePorts,"+	KubeProxyNFTablesLocalhostNodePorts featuregate.Feature = "KubeProxyNFTablesLocalhostNodePorts""
+32121185b8fa9d4c495e813443b201230fcb577f,2026-05-22,added,InPlacePodVerticalScalingMemoryBackedVolumes,"+	InPlacePodVerticalScalingMemoryBackedVolumes featuregate.Feature = "InPlacePodVerticalScalingMemoryBackedVolumes""
+efb871ca6bba3e0543bee5d8afdcdca46c5fb617,2026-06-22,added,InPlacePodVerticalScalingSchedulerPreemption,"+	InPlacePodVerticalScalingSchedulerPreemption featuregate.Feature = "InPlacePodVerticalScalingSchedulerPreemption""
+fd6241e1f03ce5ddfe2ab182acaf1bfa506138b7,2026-07-02,added,DRAFractionalCapacityRange,"+	DRAFractionalCapacityRange featuregate.Feature = "DRAFractionalCapacityRange""
+1999683eee27372c7bcca8bd15d01cff59e8cbcb,2026-07-19,added,StatefulSetRecreateStrategy,"+	StatefulSetRecreateStrategy featuregate.Feature = "StatefulSetRecreateStrategy""
 eff86735375b8f059d2cd7e38b2ccaa1b58bb178,2026-02-20,added,PodLevelResourcesFixKubeletQOSClass,"+	PodLevelResourcesFixKubeletQOSClass featuregate.Feature = "PodLevelResourcesFixKubeletQOSClass""
 3d336bca5cf9f0d3916e086b09e6f873ec682fd6,2026-06-24,added,NodeLifecycleConditions,"+	NodeLifecycleConditions featuregate.Feature = "NodeLifecycleConditions""
 e76929b8810bf98bcd84686398a27e3ddd95ac2e,2026-07-04,removed,PreventStaticPodAPIReferences,"-	PreventStaticPodAPIReferences featuregate.Feature = "PreventStaticPodAPIReferences""
