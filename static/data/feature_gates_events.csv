@@ -1,4 +1,7 @@
 sha,date,event,feature,line
+fb74900c5341043b3f1a6c47bd88f3d69f499328,2026-03-26,added,InterPodAffinityHostnameFastPath,"+	InterPodAffinityHostnameFastPath featuregate.Feature = "InterPodAffinityHostnameFastPath""
+879f922f6b1c46f49a2fa966db1a61962294dbe0,2026-07-24,added,SchedulerPreQueueingHints,"+	SchedulerPreQueueingHints featuregate.Feature = "SchedulerPreQueueingHints""
+9f0a577fc672d1c867752db125708dbb563f64fc,2026-07-24,added,DRADeviceCompatibilityGroups,"+	DRADeviceCompatibilityGroups featuregate.Feature = "DRADeviceCompatibilityGroups""
 8690b251248f8ee8d238020771e4e9e0852b29ba,2026-06-27,added,DRADerivedAttributes,"+	DRADerivedAttributes featuregate.Feature = "DRADerivedAttributes""
 5754db53155cc68fd620ca8d38dbf87277ba4252,2026-06-17,added,DRAOptionalNodeOperations,"+	DRAOptionalNodeOperations featuregate.Feature = "DRAOptionalNodeOperations""
 5a39f42cffb21f5c3a6d9c29ab6a229752413a2f,2026-06-24,added,VolumeBindMountOptions,"+	VolumeBindMountOptions featuregate.Feature = "VolumeBindMountOptions""
