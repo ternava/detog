@@ -1,4 +1,10 @@
 sha,date,event,feature,line
+8b8eb925224efbe344e0326d96be96ab8deaa87a,2026-08-28,added,vue3_migrate_import_github,"config/feature_flags/beta/vue3_migrate_import_github.yml"
+c0e27f98ffb102eb32ad46e75f02174d7cecf1e7,2026-08-28,added,duo_developer_model_config,"config/feature_flags/gitlab_com_derisk/duo_developer_model_config.yml"
+b575f519ecb9207c115837492470b6a53b546947,2026-08-26,added,vue3_migrate_commit_list,"config/feature_flags/beta/vue3_migrate_commit_list.yml"
+8e1ed7b53bf2bb791e1a9b64b82cb8babc547e9b,2026-08-28,removed,cells_unique_claims,"config/feature_flags/beta/cells_unique_claims.yml"
+5a3d2c04904420cd30e38543f5c4dd38bdfe9b30,2026-08-28,added,merge_request_create_flow_trigger,"config/feature_flags/gitlab_com_derisk/merge_request_create_flow_trigger.yml"
+76f5cf7d356f5ce9c7b1f594188aaa4677f27f59,2026-08-28,added,assign_reviewer_on_review_submission,"config/feature_flags/gitlab_com_derisk/assign_reviewer_on_review_submission.yml"
 f2f660add5336c51a8cbf929cb2add05f9cb5be1,2026-08-28,removed,cells_claims_emails,"config/feature_flags/beta/cells_claims_emails.yml"
 f2f660add5336c51a8cbf929cb2add05f9cb5be1,2026-08-28,removed,cells_claims_keys,"config/feature_flags/beta/cells_claims_keys.yml"
 f2f660add5336c51a8cbf929cb2add05f9cb5be1,2026-08-28,removed,cells_claims_namespaces,"config/feature_flags/beta/cells_claims_namespaces.yml"
