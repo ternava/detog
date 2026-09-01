@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+c7ec7da06bac1f3c3756f7119e789e315adaeb7b,2026-08-31,removed,JobManagedBy,"-	JobManagedBy featuregate.Feature = "JobManagedBy""
 d9b1537ce1dec455abceb2c4d179190606a1f4da,2025-11-18,removed,ServiceAccountTokenPodNodeInfo,"-	ServiceAccountTokenPodNodeInfo featuregate.Feature = "ServiceAccountTokenPodNodeInfo""
 fb74900c5341043b3f1a6c47bd88f3d69f499328,2026-03-26,added,InterPodAffinityHostnameFastPath,"+	InterPodAffinityHostnameFastPath featuregate.Feature = "InterPodAffinityHostnameFastPath""
 879f922f6b1c46f49a2fa966db1a61962294dbe0,2026-07-24,added,SchedulerPreQueueingHints,"+	SchedulerPreQueueingHints featuregate.Feature = "SchedulerPreQueueingHints""

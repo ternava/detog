@@ -1,4 +1,7 @@
 sha,date,event,feature,line
+40697d8366af963474c3a1e32e5722bfeb58149f,2026-08-31,removed,partition_aware_pipeline_preload,"config/feature_flags/gitlab_com_derisk/partition_aware_pipeline_preload.yml"
+5a63c463f2d6c3c9564a979eb1068419ddb1b464,2026-07-28,removed,ci_resume_environment_runner_routing,"config/feature_flags/gitlab_com_derisk/ci_resume_environment_runner_routing.yml"
+3a6500c7bc915f979f69b152792a9f888a9715b0,2026-08-31,added,use_labkit_git_basic_auth_ban,"config/feature_flags/gitlab_com_derisk/use_labkit_git_basic_auth_ban.yml"
 8b8eb925224efbe344e0326d96be96ab8deaa87a,2026-08-28,added,vue3_migrate_import_github,"config/feature_flags/beta/vue3_migrate_import_github.yml"
 c0e27f98ffb102eb32ad46e75f02174d7cecf1e7,2026-08-28,added,duo_developer_model_config,"config/feature_flags/gitlab_com_derisk/duo_developer_model_config.yml"
 b575f519ecb9207c115837492470b6a53b546947,2026-08-26,added,vue3_migrate_commit_list,"config/feature_flags/beta/vue3_migrate_commit_list.yml"
