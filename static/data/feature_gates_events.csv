@@ -1,5 +1,6 @@
 sha,date,event,feature,line
 4bb25ceabb7a78ac06bd519f9cb7edc71bf08657,2026-09-01,removed,PodSchedulingReadiness,"-	PodSchedulingReadiness featuregate.Feature = "PodSchedulingReadiness""
+ee28ae080941df6d6f8ea2534960a0b2fcfc9226,2026-08-31,removed,KubeletTracing,"-	KubeletTracing featuregate.Feature = "KubeletTracing""
 c7ec7da06bac1f3c3756f7119e789e315adaeb7b,2026-08-31,removed,JobManagedBy,"-	JobManagedBy featuregate.Feature = "JobManagedBy""
 d9b1537ce1dec455abceb2c4d179190606a1f4da,2025-11-18,removed,ServiceAccountTokenPodNodeInfo,"-	ServiceAccountTokenPodNodeInfo featuregate.Feature = "ServiceAccountTokenPodNodeInfo""
 fb74900c5341043b3f1a6c47bd88f3d69f499328,2026-03-26,added,InterPodAffinityHostnameFastPath,"+	InterPodAffinityHostnameFastPath featuregate.Feature = "InterPodAffinityHostnameFastPath""
