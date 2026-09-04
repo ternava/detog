@@ -1,5 +1,7 @@
 sha,date,event,feature,line
+10b3fc23da774fbdab6ab112e96101e47cde4860,2026-08-31,removed,PreferSameTrafficDistribution,"-	PreferSameTrafficDistribution featuregate.Feature = "PreferSameTrafficDistribution""
 4bb25ceabb7a78ac06bd519f9cb7edc71bf08657,2026-09-01,removed,PodSchedulingReadiness,"-	PodSchedulingReadiness featuregate.Feature = "PodSchedulingReadiness""
+e9e805afd59351775eac182230fcd517cc05adfc,2026-08-31,removed,NFTablesProxyMode,"-	NFTablesProxyMode featuregate.Feature = "NFTablesProxyMode""
 ee28ae080941df6d6f8ea2534960a0b2fcfc9226,2026-08-31,removed,KubeletTracing,"-	KubeletTracing featuregate.Feature = "KubeletTracing""
 c7ec7da06bac1f3c3756f7119e789e315adaeb7b,2026-08-31,removed,JobManagedBy,"-	JobManagedBy featuregate.Feature = "JobManagedBy""
 d9b1537ce1dec455abceb2c4d179190606a1f4da,2025-11-18,removed,ServiceAccountTokenPodNodeInfo,"-	ServiceAccountTokenPodNodeInfo featuregate.Feature = "ServiceAccountTokenPodNodeInfo""
