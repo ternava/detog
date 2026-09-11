@@ -1,4 +1,11 @@
 sha,date,event,feature,line
+46510735c69d4376fc46d3eb40469865a9fcd8c0,2026-09-10,removed,mcp_tool_alias_resolution,"config/feature_flags/gitlab_com_derisk/mcp_tool_alias_resolution.yml"
+ebe0afef60956d7c3c118ed11c8dd59517acc259,2026-09-10,added,org_mover_maintenance_api,"config/feature_flags/wip/org_mover_maintenance_api.yml"
+ad5a86fed2b7c7be480bc579d6930121d4b556c2,2026-09-10,added,note_agent_session_bar,"config/feature_flags/wip/note_agent_session_bar.yml"
+f23e4580a200f4acd62be1051430e904d9736042,2026-09-10,added,wiki_collaborative_editing,"config/feature_flags/wip/wiki_collaborative_editing.yml"
+7c509503ea945b9f86e28f97da000d8546d762cd,2026-08-17,added,vue3_migrate_terraform,"config/feature_flags/beta/vue3_migrate_terraform.yml"
+3aba72f9e7e105883ba8e6b450a3d9124f75fef4,2026-09-10,added,work_item_delete_rate_limit,"config/feature_flags/gitlab_com_derisk/work_item_delete_rate_limit.yml"
+173dba42e54dae446727657386899ad4b6dcf12a,2026-09-10,added,vue3_migrate_pages,"config/feature_flags/beta/vue3_migrate_pages.yml"
 2f12043ed9da5186354e5915694e55a7dcb4d90e,2026-09-10,added,auto_merge_abort_uses_target_project,"config/feature_flags/gitlab_com_derisk/auto_merge_abort_uses_target_project.yml"
 b86af1ca909cf0993361c0ef06950713996b266f,2026-09-10,added,member_prune_deletion_per_batch_authorized_projects_refresh,"config/feature_flags/gitlab_com_derisk/member_prune_deletion_per_batch_authorized_projects_refresh.yml"
 70e10ede2375e4760b626894988939a92b066a44,2026-09-09,added,mr_ai_overview,"config/feature_flags/wip/mr_ai_overview.yml"
