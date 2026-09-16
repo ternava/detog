@@ -1,4 +1,6 @@
 sha,date,event,feature,line
+cd96a4c6cbc20f2ab990645a3f96d8245ea57d82,2026-09-15,added,github_continuous_import,"config/feature_flags/wip/github_continuous_import.yml"
+d90e3a02d6da935fa6fac63fc4143166ed4194de,2026-09-15,removed,blob_permalink_embed,"config/feature_flags/gitlab_com_derisk/blob_permalink_embed.yml"
 5264b617bdf6f54bf9350bacd977f033b3022aa4,2026-09-14,added,audit_events_details_drawer,"config/feature_flags/development/audit_events_details_drawer.yml"
 89e84df3cbafb975f7fa5cd5a92a868bd7ced958,2026-09-14,added,mr_by_commit_sha_use_array_subquery,"config/feature_flags/gitlab_com_derisk/mr_by_commit_sha_use_array_subquery.yml"
 abda1ad5b9cbf512a2bed11afeceb97d2400037c,2026-08-07,added,security_scans_purge_db_health_check,"config/feature_flags/ops/security_scans_purge_db_health_check.yml"
