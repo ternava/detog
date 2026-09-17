@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+aac3d70f0b2f93dcc0349cb9b6da211581072e78,2026-09-08,removed,DynamicResourceAllocation,"-	DynamicResourceAllocation featuregate.Feature = "DynamicResourceAllocation""
 981e75521573ba71e6a7ef8f92284bd827ed9e67,2026-09-01,removed,DisableAllocatorDualWrite,"-	DisableAllocatorDualWrite featuregate.Feature = "DisableAllocatorDualWrite""
 981e75521573ba71e6a7ef8f92284bd827ed9e67,2026-09-01,removed,MultiCIDRServiceAllocator,"-	MultiCIDRServiceAllocator featuregate.Feature = "MultiCIDRServiceAllocator""
 10b3fc23da774fbdab6ab112e96101e47cde4860,2026-08-31,removed,PreferSameTrafficDistribution,"-	PreferSameTrafficDistribution featuregate.Feature = "PreferSameTrafficDistribution""
