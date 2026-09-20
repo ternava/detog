@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+f3ea0143dbb44c79d9824a4c34ac7fce665c564c,2026-09-19,removed,usage_data_queries_api,"config/feature_flags/ops/usage_data_queries_api.yml"
 b8cc4bc31dc76006de035aa989dfc35de789e4ad,2026-09-18,added,restore_missing_mr_diff_commits,"config/feature_flags/gitlab_com_derisk/restore_missing_mr_diff_commits.yml"
 e868b5247b8fcdb1c725cb88124dac2597def4c2,2026-09-18,added,advanced_groups_finder_elasticsearch,"config/feature_flags/gitlab_com_derisk/advanced_groups_finder_elasticsearch.yml"
 198fd1324b92e2615b11bdd22f20d43f28d82756,2026-09-17,added,mcp_toolsets,"config/feature_flags/gitlab_com_derisk/mcp_toolsets.yml"
