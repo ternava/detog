@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+5d859048812a782f3c693cd63e3ab4cf34c39a59,2026-09-21,added,rspack_production_assets,"config/feature_flags/gitlab_com_derisk/rspack_production_assets.yml"
 f3ea0143dbb44c79d9824a4c34ac7fce665c564c,2026-09-19,removed,usage_data_queries_api,"config/feature_flags/ops/usage_data_queries_api.yml"
 b8cc4bc31dc76006de035aa989dfc35de789e4ad,2026-09-18,added,restore_missing_mr_diff_commits,"config/feature_flags/gitlab_com_derisk/restore_missing_mr_diff_commits.yml"
 e868b5247b8fcdb1c725cb88124dac2597def4c2,2026-09-18,added,advanced_groups_finder_elasticsearch,"config/feature_flags/gitlab_com_derisk/advanced_groups_finder_elasticsearch.yml"
@@ -98,6 +99,7 @@ f33e648cd986fd5f57faa8133771d3e92becfec6,2026-09-03,removed,groups_and_projects_
 75bc89f8b5af667b2c95c937a991ce62a433feed,2026-09-03,removed,configurable_security_scan_profiles,"config/feature_flags/beta/configurable_security_scan_profiles.yml"
 553c45fe395180ce073ba089d57b784277c6469e,2026-09-03,removed,merge_request_code_dropdown_vue,"config/feature_flags/gitlab_com_derisk/merge_request_code_dropdown_vue.yml"
 b61f2cbad9d0267df6cd7c5b14d71c13c25c962a,2026-09-03,removed,issue_date_filter,"config/feature_flags/development/issue_date_filter.yml"
+2ee605766ef87ebd9b27279601724a10dde3525f,2026-09-03,removed,use_cte_for_label_filter,"config/feature_flags/gitlab_com_derisk/use_cte_for_label_filter.yml"
 7f5aadbdec2def96eea9ae6ac889a322e9098482,2026-09-03,added,instance_ssh_certificates,"config/feature_flags/beta/instance_ssh_certificates.yml"
 cce329a445dbd272059be53184e98242af708b9f,2026-09-03,removed,gate_token_exchange_endpoint,"config/feature_flags/gitlab_com_derisk/gate_token_exchange_endpoint.yml"
 63517746a2451bcb1d5f02a48dfaad55b9a4dc7d,2026-09-03,added,parallel_test_balancing,"config/feature_flags/beta/parallel_test_balancing.yml"
