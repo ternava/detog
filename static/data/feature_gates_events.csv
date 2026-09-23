@@ -4,6 +4,7 @@ aac3d70f0b2f93dcc0349cb9b6da211581072e78,2026-09-08,removed,DynamicResourceAlloc
 6bc3a25624e7dd4ca91920287b658f14688fd482,2026-09-10,removed,WindowsHostNetwork,"-	WindowsHostNetwork featuregate.Feature = "WindowsHostNetwork""
 981e75521573ba71e6a7ef8f92284bd827ed9e67,2026-09-01,removed,DisableAllocatorDualWrite,"-	DisableAllocatorDualWrite featuregate.Feature = "DisableAllocatorDualWrite""
 981e75521573ba71e6a7ef8f92284bd827ed9e67,2026-09-01,removed,MultiCIDRServiceAllocator,"-	MultiCIDRServiceAllocator featuregate.Feature = "MultiCIDRServiceAllocator""
+939de0e5d6596ec3e7dacd62f8a4c5b74c9c798e,2026-09-02,removed,SeparateTaintEvictionController,"-	SeparateTaintEvictionController featuregate.Feature = "SeparateTaintEvictionController""
 10b3fc23da774fbdab6ab112e96101e47cde4860,2026-08-31,removed,PreferSameTrafficDistribution,"-	PreferSameTrafficDistribution featuregate.Feature = "PreferSameTrafficDistribution""
 4bb25ceabb7a78ac06bd519f9cb7edc71bf08657,2026-09-01,removed,PodSchedulingReadiness,"-	PodSchedulingReadiness featuregate.Feature = "PodSchedulingReadiness""
 e9e805afd59351775eac182230fcd517cc05adfc,2026-08-31,removed,NFTablesProxyMode,"-	NFTablesProxyMode featuregate.Feature = "NFTablesProxyMode""

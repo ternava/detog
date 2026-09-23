@@ -1,4 +1,9 @@
 sha,date,event,feature,line
+6c99b7594d32012c6d6e5edd11aa1f9729c2efc0,2026-09-22,added,rate_limit_pipeline_cancel,"config/feature_flags/gitlab_com_derisk/rate_limit_pipeline_cancel.yml"
+d81bdf8490161aecbfe41afc2636a9efb5259db0,2026-09-22,added,clear_action_cable_loader,"config/feature_flags/gitlab_com_derisk/clear_action_cable_loader.yml"
+fae8b43ef140105ed08fc0422fc358352023f7ea,2026-09-22,added,namespaces_advanced_groups_finder,"config/feature_flags/gitlab_com_derisk/namespaces_advanced_groups_finder.yml"
+6e2ccd376f21e31ae6d4d87dfacdb79c3d910aa2,2026-09-22,added,organization_scoped_new_dropdown,"config/feature_flags/gitlab_com_derisk/organization_scoped_new_dropdown.yml"
+c87887130f8c59583b24ae2091757cc8a854a7a7,2026-09-14,added,vue3_migrate_releases,"config/feature_flags/beta/vue3_migrate_releases.yml"
 5d859048812a782f3c693cd63e3ab4cf34c39a59,2026-09-21,added,rspack_production_assets,"config/feature_flags/gitlab_com_derisk/rspack_production_assets.yml"
 f3ea0143dbb44c79d9824a4c34ac7fce665c564c,2026-09-19,removed,usage_data_queries_api,"config/feature_flags/ops/usage_data_queries_api.yml"
 b8cc4bc31dc76006de035aa989dfc35de789e4ad,2026-09-18,added,restore_missing_mr_diff_commits,"config/feature_flags/gitlab_com_derisk/restore_missing_mr_diff_commits.yml"
