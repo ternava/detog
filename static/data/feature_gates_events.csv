@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+7e0175f6324976c557872bebfce8ab296265b15d,2026-09-22,added,CertificateSigningRequestMLDSA,"+	CertificateSigningRequestMLDSA featuregate.Feature = "CertificateSigningRequestMLDSA""
 7bb33e10dbda3bc693b782b329e3db2849857522,2026-09-16,added,PodCertificateMLDSA,"+	PodCertificateMLDSA featuregate.Feature = "PodCertificateMLDSA""
 aac3d70f0b2f93dcc0349cb9b6da211581072e78,2026-09-08,removed,DynamicResourceAllocation,"-	DynamicResourceAllocation featuregate.Feature = "DynamicResourceAllocation""
 6bc3a25624e7dd4ca91920287b658f14688fd482,2026-09-10,removed,WindowsHostNetwork,"-	WindowsHostNetwork featuregate.Feature = "WindowsHostNetwork""
