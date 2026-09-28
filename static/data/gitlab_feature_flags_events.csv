@@ -1,4 +1,6 @@
 sha,date,event,feature,line
+674d068be70c5233527b11c181adeae6de739b12,2026-09-27,removed,inline_blame,"config/feature_flags/beta/inline_blame.yml"
+214e5900b676d5c470bf269bdb918208c995f7f5,2026-09-25,added,vue3_migrate_crm,"config/feature_flags/beta/vue3_migrate_crm.yml"
 082f15c83011ab363c50c2e50f381672f0129afc,2026-09-25,added,rate_limit_job_play,"config/feature_flags/gitlab_com_derisk/rate_limit_job_play.yml"
 082f15c83011ab363c50c2e50f381672f0129afc,2026-09-25,added,rate_limit_job_retry,"config/feature_flags/gitlab_com_derisk/rate_limit_job_retry.yml"
 50745345709e36cbe0bbe29dae5582ae842911f1,2026-09-25,added,defer_offscreen_glql_dashboard_panels,"config/feature_flags/gitlab_com_derisk/defer_offscreen_glql_dashboard_panels.yml"
