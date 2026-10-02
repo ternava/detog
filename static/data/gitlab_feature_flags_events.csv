@@ -1,4 +1,11 @@
 sha,date,event,feature,line
+0510672e1c0863664428774848127a362508c81e,2026-10-02,added,work_item_status_for_epics,"config/feature_flags/wip/work_item_status_for_epics.yml"
+de641c40b6175988e857ea4ea5072013cfb5e1f5,2026-10-01,added,contribution_music_easter_egg,"config/feature_flags/ops/contribution_music_easter_egg.yml"
+3183af36c86c7c17ed2f19ac1a556adc8d510d48,2026-10-02,added,org_stage_internal,"config/feature_flags/ops/org_stage_internal.yml"
+fd94273790eddae09fa4425be1f936bb631801e4,2026-10-01,removed,mcp_toolsets,"config/feature_flags/gitlab_com_derisk/mcp_toolsets.yml"
+330b1cc3b5e551e367a4a1344cbf6c7c6afc5ab6,2026-10-01,added,vue3_migrate_organizations,"config/feature_flags/beta/vue3_migrate_organizations.yml"
+7955ab4e4c19ae67dc34d1bb47d1872516753c6b,2026-10-01,added,glql_dashboard_panels_in_reading_order,"config/feature_flags/gitlab_com_derisk/glql_dashboard_panels_in_reading_order.yml"
+8eb2ef23fb5469e1f32cf7b5d535545c7d6960b4,2026-10-01,added,planning_view_boards_group,"config/feature_flags/wip/planning_view_boards_group.yml"
 ca32a581d78bb2340c493ae96ab1016e8fd3fce2,2026-09-30,added,etag_caching_post_requests,"config/feature_flags/gitlab_com_derisk/etag_caching_post_requests.yml"
 a696ddcc0e30a1a822f9c321ba146a291d43e9de,2026-09-30,removed,vue3_migrate_import_github,"config/feature_flags/beta/vue3_migrate_import_github.yml"
 a696ddcc0e30a1a822f9c321ba146a291d43e9de,2026-09-30,added,vue3_migrate_import_project_importers,"config/feature_flags/beta/vue3_migrate_import_project_importers.yml"
