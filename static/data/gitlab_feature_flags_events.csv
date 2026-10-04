@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+aadeca70ab67f52cfde8999ff093367c962cee87,2026-10-03,added,rate_limit_pipeline_delete,"config/feature_flags/gitlab_com_derisk/rate_limit_pipeline_delete.yml"
 bb3d1367be21f12126d01140ed0acbe4b3a714f1,2026-10-02,added,batch_pipeline_job_policy_checks,"config/feature_flags/gitlab_com_derisk/batch_pipeline_job_policy_checks.yml"
 b15a29b26d094c76e4f9066191d2a0417530d251,2026-10-02,added,diff_stitcher_single_file_lookahead,"config/feature_flags/gitlab_com_derisk/diff_stitcher_single_file_lookahead.yml"
 9892f2e6cf006fa1acc3f4d744f707757111db58,2026-10-02,added,increase_ci_cache_key_files_limit,"config/feature_flags/beta/increase_ci_cache_key_files_limit.yml"
