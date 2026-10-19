@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+3ab44e4fe9e22ff2f3bc01f15c0722e747df303b,2026-10-19,added,vue3_migrate_jira_connect_app,"config/feature_flags/beta/vue3_migrate_jira_connect_app.yml"
 58b751541d8d0939db937dca740c362176f821f1,2026-10-17,removed,dependency_firewall_risk_severity_rule,"config/feature_flags/wip/dependency_firewall_risk_severity_rule.yml"
 5d74f5f76e559857a57772f20e885218090fb58b,2026-10-17,added,lock_auth_refresh_jobs_per_user,"config/feature_flags/gitlab_com_derisk/lock_auth_refresh_jobs_per_user.yml"
 f5eedd99436f7aaff5641f8c21aeec8449280e56,2026-10-17,added,restrict_global_issues_scope_all,"config/feature_flags/gitlab_com_derisk/restrict_global_issues_scope_all.yml"
