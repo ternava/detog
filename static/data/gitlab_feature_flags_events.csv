@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+d9097fa7a54dd0b7cfacb2e5b5014f45b4725b0e,2026-10-24,added,safety_net_skip_projects_pending_refresh,"config/feature_flags/gitlab_com_derisk/safety_net_skip_projects_pending_refresh.yml"
 2860ff6877ee01630e324023a3f8809f63b325cc,2026-10-24,added,group_general_settings_vue,"config/feature_flags/gitlab_com_derisk/group_general_settings_vue.yml"
 1d5318893f09ada20d58ad3fec426c503f3aee50,2026-10-23,added,ci_pipeline_seed_timeout,"config/feature_flags/beta/ci_pipeline_seed_timeout.yml"
 1d5318893f09ada20d58ad3fec426c503f3aee50,2026-10-23,added,ci_pipeline_seed_timeout_override,"config/feature_flags/ops/ci_pipeline_seed_timeout_override.yml"
