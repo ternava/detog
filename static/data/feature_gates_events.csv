@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+9f9344d46f73584ddba2371cbf0d178c6a8c4426,2026-09-10,removed,SupplementalGroupsPolicy,"-	SupplementalGroupsPolicy featuregate.Feature = "SupplementalGroupsPolicy""
 b2c68cf95c5389e5fa348fe2081415932cbd9a43,2026-10-23,removed,AllowOverwriteTerminationGracePeriodSeconds,"-	AllowOverwriteTerminationGracePeriodSeconds featuregate.Feature = "AllowOverwriteTerminationGracePeriodSeconds""
 e0e863d284f8cc02b639d5e3a7f51d226b60fefe,2026-10-23,removed,ExecProbeTimeout,"-	ExecProbeTimeout featuregate.Feature = "ExecProbeTimeout""
 cc22f731dfb34429f642ed15b6bf8602fa09af3d,2026-09-01,removed,MatchLabelKeysInPodAffinity,"-	MatchLabelKeysInPodAffinity featuregate.Feature = "MatchLabelKeysInPodAffinity""
