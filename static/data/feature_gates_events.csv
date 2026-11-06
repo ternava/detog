@@ -1,7 +1,12 @@
 sha,date,event,feature,line
+be90f569f35f2a297a9023dbdc61ca497423a3b1,2026-11-04,removed,InPlacePodVerticalScaling,"-	InPlacePodVerticalScaling featuregate.Feature = "InPlacePodVerticalScaling""
+fa16fcb9e9ec8861212097818facbf405bea7d4d,2026-09-28,added,ServiceAccountTokenMLDSA,"+	ServiceAccountTokenMLDSA featuregate.Feature = "ServiceAccountTokenMLDSA""
+84b164d768c32bed7c614b8f8ed5c00ef1f60f86,2026-10-07,added,KubeAPIServerWorkloadsTrust,"+	KubeAPIServerWorkloadsTrust featuregate.Feature = "KubeAPIServerWorkloadsTrust""
 55043065b33b51c8e3cbadd455268c2567efa670,2026-11-03,added,DynamicNodeLocalEphemeralVolumes,"+	DynamicNodeLocalEphemeralVolumes featuregate.Feature = "DynamicNodeLocalEphemeralVolumes""
 78c0f9a232db53535aebe044f4fbfeb5a2acb760,2026-10-21,removed,PodGroupPreemptionPolicy,"-	PodGroupPreemptionPolicy featuregate.Feature = "PodGroupPreemptionPolicy""
 44dfc921ce93c4c60e5f48f9fcb9f494da8409f6,2026-09-29,added,SecurityProfileOCI,"+	SecurityProfileOCI featuregate.Feature = "SecurityProfileOCI""
+6b06590525ce09ae6d73c2a69daaa4cdbfaecd3d,2026-05-15,removed,RecoverVolumeExpansionFailure,"-	RecoverVolumeExpansionFailure featuregate.Feature = "RecoverVolumeExpansionFailure""
+aa185281afe4a69d9de869ba56f3085ea527e45e,2026-10-30,removed,NodeSwap,"-	NodeSwap featuregate.Feature = "NodeSwap""
 9f9344d46f73584ddba2371cbf0d178c6a8c4426,2026-09-10,removed,SupplementalGroupsPolicy,"-	SupplementalGroupsPolicy featuregate.Feature = "SupplementalGroupsPolicy""
 b2c68cf95c5389e5fa348fe2081415932cbd9a43,2026-10-23,removed,AllowOverwriteTerminationGracePeriodSeconds,"-	AllowOverwriteTerminationGracePeriodSeconds featuregate.Feature = "AllowOverwriteTerminationGracePeriodSeconds""
 e0e863d284f8cc02b639d5e3a7f51d226b60fefe,2026-10-23,removed,ExecProbeTimeout,"-	ExecProbeTimeout featuregate.Feature = "ExecProbeTimeout""
