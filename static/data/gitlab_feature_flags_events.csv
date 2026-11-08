@@ -1,4 +1,6 @@
 sha,date,event,feature,line
+f6c22abba03dc8ea5fb483c160bba6c721b685f4,2026-11-07,added,mfe_duo_chat_poc,"config/feature_flags/wip/mfe_duo_chat_poc.yml"
+51551ca5b3051d64be626a3ca764ee63ab195d17,2026-11-07,removed,autovacuum_indicator_uses_context_connection,"config/feature_flags/ops/autovacuum_indicator_uses_context_connection.yml"
 fa7b7e69975549fc41816b054e8e0ed10527e445,2026-11-06,added,org_mover_manifest_api,"config/feature_flags/wip/org_mover_manifest_api.yml"
 ec41a566b8922525068e6051682110d8db2be89c,2026-11-06,added,pages_domain_rate_limits,"config/feature_flags/gitlab_com_derisk/pages_domain_rate_limits.yml"
 80781e6556c211b7e2744a377ccf40f4df8eea85,2026-11-06,added,ci_interpolation_default_function,"config/feature_flags/beta/ci_interpolation_default_function.yml"
