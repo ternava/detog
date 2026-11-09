@@ -1,4 +1,5 @@
 sha,date,event,feature,line
+ac95161611ff76df6ded499ddfa1826010fece8c,2026-11-06,removed,RecursiveReadOnlyMounts,"-	RecursiveReadOnlyMounts featuregate.Feature = "RecursiveReadOnlyMounts""
 ae07c2562af3eff383d39ff18de3fce6b2ad036a,2024-06-29,added,PodFailurePolicyName,"+	PodFailurePolicyName featuregate.Feature = "PodFailurePolicyName""
 be90f569f35f2a297a9023dbdc61ca497423a3b1,2026-11-04,removed,InPlacePodVerticalScaling,"-	InPlacePodVerticalScaling featuregate.Feature = "InPlacePodVerticalScaling""
 fa16fcb9e9ec8861212097818facbf405bea7d4d,2026-09-28,added,ServiceAccountTokenMLDSA,"+	ServiceAccountTokenMLDSA featuregate.Feature = "ServiceAccountTokenMLDSA""
