@@ -3,6 +3,7 @@ sha,date,event,feature,line
 c91306f60e23b022a2807cbbb3a34cb9882c35b1,2026-11-08,added,CSIGlobalMountReconstruction,"+	CSIGlobalMountReconstruction featuregate.Feature = "CSIGlobalMountReconstruction""
 ac95161611ff76df6ded499ddfa1826010fece8c,2026-11-06,removed,RecursiveReadOnlyMounts,"-	RecursiveReadOnlyMounts featuregate.Feature = "RecursiveReadOnlyMounts""
 ae07c2562af3eff383d39ff18de3fce6b2ad036a,2024-06-29,added,PodFailurePolicyName,"+	PodFailurePolicyName featuregate.Feature = "PodFailurePolicyName""
+272bd721c5d6a0c7c52c5fc82abb9f2648af62c6,2026-11-03,added,DRAExtendedResourceCapacity,"+	DRAExtendedResourceCapacity featuregate.Feature = "DRAExtendedResourceCapacity""
 be90f569f35f2a297a9023dbdc61ca497423a3b1,2026-11-04,removed,InPlacePodVerticalScaling,"-	InPlacePodVerticalScaling featuregate.Feature = "InPlacePodVerticalScaling""
 fa16fcb9e9ec8861212097818facbf405bea7d4d,2026-09-28,added,ServiceAccountTokenMLDSA,"+	ServiceAccountTokenMLDSA featuregate.Feature = "ServiceAccountTokenMLDSA""
 84b164d768c32bed7c614b8f8ed5c00ef1f60f86,2026-10-07,added,KubeAPIServerWorkloadsTrust,"+	KubeAPIServerWorkloadsTrust featuregate.Feature = "KubeAPIServerWorkloadsTrust""
