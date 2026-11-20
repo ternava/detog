@@ -1,4 +1,8 @@
 sha,date,event,feature,line
+aa3d5a47b74594c82681bf763541577defafdefd,2026-11-01,added,CgroupNamespacesSupport,"+	CgroupNamespacesSupport featuregate.Feature = "CgroupNamespacesSupport""
+71f251b1faa85db69c232510609325118a96fdcc,2026-11-19,added,WorkloadControlledSwap,"+	WorkloadControlledSwap featuregate.Feature = "WorkloadControlledSwap""
+3bfebcf89e105e97b28ef2eecbeff60f96bdf719,2026-11-01,added,ContainerScopedProbes,"+	ContainerScopedProbes featuregate.Feature = "ContainerScopedProbes""
+1f0c9df9a58e1d81cc69350ee3d4e740b78817df,2026-10-23,added,KubeServingCertificatesSigner,"+	KubeServingCertificatesSigner featuregate.Feature = "KubeServingCertificatesSigner""
 1f57597e42f84cd30c3789fa6716dff441ce0c62,2026-11-17,added,CSIControllerGetNodeInfo,"+	CSIControllerGetNodeInfo featuregate.Feature = "CSIControllerGetNodeInfo""
 6d0391f1cb473d04078f22f59ae19b6c450283f6,2026-11-17,added,PodLevelResourcesFixInitContainerLimits,"+	PodLevelResourcesFixInitContainerLimits featuregate.Feature = "PodLevelResourcesFixInitContainerLimits""
 4e10da51d098ecc0d6bdcd254021ce2b9c43bed8,2026-07-21,added,DRASharedConsumableCapacity,"+	DRASharedConsumableCapacity featuregate.Feature = "DRASharedConsumableCapacity""
