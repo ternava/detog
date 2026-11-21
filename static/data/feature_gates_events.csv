@@ -1,4 +1,6 @@
 sha,date,event,feature,line
+def41e2fcb754a4b52fe28c895a490e4eb051672,2026-10-08,added,NodeMemoryReservationPolicy,"+	NodeMemoryReservationPolicy featuregate.Feature = "NodeMemoryReservationPolicy""
+47a43cc5400bb10aa95b762fde5958b82e2e53e7,2026-11-20,added,PerPodPIDLimit,"+	PerPodPIDLimit featuregate.Feature = "PerPodPIDLimit""
 aa3d5a47b74594c82681bf763541577defafdefd,2026-11-01,added,CgroupNamespacesSupport,"+	CgroupNamespacesSupport featuregate.Feature = "CgroupNamespacesSupport""
 71f251b1faa85db69c232510609325118a96fdcc,2026-11-19,added,WorkloadControlledSwap,"+	WorkloadControlledSwap featuregate.Feature = "WorkloadControlledSwap""
 3bfebcf89e105e97b28ef2eecbeff60f96bdf719,2026-11-01,added,ContainerScopedProbes,"+	ContainerScopedProbes featuregate.Feature = "ContainerScopedProbes""
